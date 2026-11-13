@@ -1,0 +1,321 @@
+/* ==========================================================================
+   Glassmorphism, Floating Navigation & Ambient System
+   ========================================================================== */
+
+/* Ambient Backdrop Glows - Soft modern pastel background */
+.ambient-glow-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-blob {
+  position: absolute;
+  filter: blur(80px);
+  opacity: 0.45;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  transition: transform 10s ease-in-out infinite alternate;
+}
+
+.ambient-blob-1 {
+  top: -120px;
+  right: -80px;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(26, 107, 255, 0.22) 0%, rgba(200, 225, 255, 0.05) 70%);
+}
+
+.ambient-blob-2 {
+  top: 180px;
+  left: -150px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(254, 215, 226, 0.35) 0%, rgba(243, 232, 255, 0.1) 70%);
+}
+
+.ambient-blob-3 {
+  top: 750px;
+  right: 10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(224, 231, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Floating Rounded Rectangle Navigation Bar */
+.floating-header {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 24px;
+  transition: transform var(--transition-normal), top var(--transition-normal);
+}
+
+.floating-navbar-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-nav); /* Rectangle with rounded corners as requested */
+  box-shadow: var(--glass-shadow);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all var(--transition-normal);
+}
+
+.floating-header.scrolled .floating-navbar-container {
+  background: var(--glass-bg-elevated);
+  box-shadow: 0 15px 35px -5px rgba(15, 23, 42, 0.12);
+  border-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 24px;
+}
+
+/* Brand Logo */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.brand-icon-box {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0A50D0 100%);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  box-shadow: 0 6px 16px rgba(26, 107, 255, 0.3);
+  font-weight: var(--font-weight-extrabold);
+  font-size: 1.15rem;
+  letter-spacing: -0.5px;
+}
+
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 1.05rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-dark);
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+
+.brand-tagline {
+  font-size: 0.72rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Nav Menu Links */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-slate);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.nav-badge-pill {
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background: #EF4444;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Dropdown Mega / Menu */
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  min-width: 260px;
+  background: var(--glass-bg-elevated);
+  backdrop-filter: blur(var(--glass-blur-heavy));
+  -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+  list-style: none;
+  z-index: 1001;
+}
+
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--color-dark);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+}
+
+.dropdown-link:hover {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+/* Nav Action Buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-nav-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  text-decoration: none;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-border-subtle);
+  background: rgba(255, 255, 255, 0.7);
+  transition: all var(--transition-fast);
+}
+
+.btn-nav-outline:hover {
+  background: #FFFFFF;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-primary-glow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 22px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white) !important;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0E55DB 100%);
+  border-radius: var(--radius-button);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--btn-glow-shadow);
+  transition: all var(--transition-fast);
+}
+
+.btn-primary-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-glow-hover);
+  background: linear-gradient(135deg, #2475FF 0%, #0849C0 100%);
+}
+
+.btn-primary-glow:active {
+  transform: translateY(0);
+}
+
+/* Frosted Glass Cards */
+.frosted-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--glass-shadow);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.frosted-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--glass-shadow-hover);
+  border-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Frosted Glass Elevated Header/Hero Card */
+.frosted-elevated {
+  background: var(--glass-bg-elevated);
+  backdrop-filter: blur(var(--glass-blur-heavy));
+  -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-card);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.1);
+}
+
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--color-dark);
+}
+
+@media (max-width: 991px) {
+  .nav-menu,
+  .nav-actions .btn-nav-outline {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: block;
+  }
+}

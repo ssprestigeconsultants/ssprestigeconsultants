@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Design Tokens & CSS Variables - S&S PRESTIGE CONSULTANTS LLP
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  /* Brand Palette - Electric Trust Blue from User Reference */
+  --color-primary: #1A6BFF;
+  --color-primary-hover: #0E55DB;
+  --color-primary-active: #0843B3;
+  --color-primary-light: rgba(26, 107, 255, 0.08);
+  --color-primary-glow: rgba(26, 107, 255, 0.35);
+
+  /* Contrast & Neutral Tones */
+  --color-dark: #0F172A;
+  --color-dark-muted: #1E293B;
+  --color-slate: #334155;
+  --color-muted: #64748B;
+  --color-light-muted: #94A3B8;
+  --color-border-subtle: #E2E8F0;
+  --color-bg-base: #F8FAFC;
+  --color-bg-alt: #F1F5F9;
+  --color-white: #FFFFFF;
+
+  /* Accent Indicators */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-accent-gold: #D97706;
+
+  /* Frosted Glass System */
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-bg-subtle: rgba(255, 255, 255, 0.65);
+  --glass-bg-elevated: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(255, 255, 255, 0.85);
+  --glass-border-subtle: rgba(226, 232, 240, 0.7);
+  --glass-blur: 20px;
+  --glass-blur-heavy: 28px;
+  --glass-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 10px 20px -5px rgba(15, 23, 42, 0.04);
+  --glass-shadow-hover: 0 30px 60px -15px rgba(26, 107, 255, 0.16), 0 15px 25px -5px rgba(15, 23, 42, 0.06);
+  --btn-glow-shadow: 0 10px 25px rgba(26, 107, 255, 0.35);
+  --btn-glow-hover: 0 14px 30px rgba(26, 107, 255, 0.45);
+
+  /* Typography Scale - Google Sans Family */
+  --font-family-base: "Google Sans", "Product Sans", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-heading: "Google Sans", "Product Sans", "Plus Jakarta Sans", sans-serif;
+  --font-family-mono: "SF Mono", "Fira Code", monospace;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 1.875rem;  /* 30px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3rem;      /* 48px */
+  --font-size-5xl: 3.75rem;   /* 60px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Rounded Corner Radii - User Request: Rectangle navbar with rounded corners */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-nav: 16px;         /* Rectangle navbar with rounded corners */
+  --radius-card: 20px;        /* Frosted glass cards */
+  --radius-button: 12px;      /* Sharp, confident interactive buttons */
+  --radius-pill: 9999px;
+
+  /* Layout Constraints */
+  --container-max: 1280px;
+  --container-narrow: 1040px;
+  --section-spacing: 96px;
+  --section-spacing-mobile: 64px;
+
+  /* Transition Speeds */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
