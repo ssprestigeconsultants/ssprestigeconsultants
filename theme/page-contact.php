@@ -18,8 +18,8 @@ get_header(); ?>
       </p>
     </div>
 
-    <!-- Dual Office Cards -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px;">
+    <!-- Dual Office Cards (Responsive Fluid Auto-Adjust) -->
+    <div class="responsive-two-col" style="margin-bottom: 50px;">
       
       <!-- Islamabad Head Office -->
       <div class="frosted-card" style="padding: 36px; border-radius: 24px;">

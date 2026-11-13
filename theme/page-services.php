@@ -18,8 +18,8 @@ get_header(); ?>
       </p>
     </div>
 
-    <!-- Practice Areas Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 30px;">
+    <!-- Practice Areas Grid (Fluid Auto-adjusting) -->
+    <div class="responsive-grid-auto">
       
       <!-- Card 1: FBR Taxation -->
       <div class="frosted-card" style="padding: 32px; border-radius: 24px;">

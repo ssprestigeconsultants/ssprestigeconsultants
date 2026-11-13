@@ -749,7 +749,7 @@ get_header(); ?>
           <input type="hidden" name="action" value="submit_consultation">
           <?php wp_nonce_field('ss_consultation_action', 'ss_consultation_nonce'); ?>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+          <div class="responsive-form-row">
             <div>
               <label class="calc-label">Your Full Name *</label>
               <input type="text" name="client_name" class="calc-input-field" placeholder="e.g. Tariq Mehmood" required>
@@ -760,7 +760,7 @@ get_header(); ?>
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+          <div class="responsive-form-row">
             <div>
               <label class="calc-label">Corporate Email Address *</label>
               <input type="email" name="client_email" class="calc-input-field" placeholder="tariq@company.com" required>
