@@ -48,10 +48,14 @@
           </a>
           <ul class="nav-dropdown">
             <li><a href="<?php echo esc_url(home_url('/services/#service-tax')); ?>" class="dropdown-link">Taxation &amp; FBR Compliance</a></li>
-            <li><a href="<?php echo esc_url(home_url('/services/#service-secp')); ?>" class="dropdown-link">SECP Company Registration</a></li>
-            <li><a href="<?php echo esc_url(home_url('/services/#service-accounting')); ?>" class="dropdown-link">Cloud Bookkeeping &amp; Payroll</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-secp')); ?>" class="dropdown-link">SECP Company &amp; LLP Registration</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-international')); ?>" class="dropdown-link">International Desk &amp; FDI</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-overseas')); ?>" class="dropdown-link">Overseas Pakistanis Desk</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-accounting')); ?>" class="dropdown-link">Cloud Bookkeeping &amp; BPO</a></li>
             <li><a href="<?php echo esc_url(home_url('/services/#service-audit')); ?>" class="dropdown-link">Audit &amp; Assurance</a></li>
             <li><a href="<?php echo esc_url(home_url('/services/#service-cfo')); ?>" class="dropdown-link">Virtual CFO &amp; ERP Advisory</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-npo')); ?>" class="dropdown-link">NPO &amp; Development Sector</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-compare')); ?>" class="dropdown-link">Entity Selection Comparison</a></li>
           </ul>
         </li>
         <li class="nav-item">

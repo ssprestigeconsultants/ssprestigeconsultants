@@ -276,6 +276,75 @@ get_header(); ?>
                     <a href="#consultation" class="btn-roster-pill" data-preselect="cfo">View details</a>
                   </td>
                 </tr>
+
+                <tr data-category="tab-secp" data-keywords="international foreign investor fdi branch liaison boi sbp foreign exchange profit repatriation transfer pricing">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar" style="background: linear-gradient(135deg, #4F46E5, #818CF8); color: #fff;">ID</div>
+                      <div>
+                        <strong>International Desk &amp; FDI</strong>
+                        <span class="roster-lead-sub">Cross-Border Inward Investment</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-intl">BOI &bull; SBP Compliant</span></td>
+                  <td>Branch / Liaison Office &amp; Profit Repatriation</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Direct Partner Escort
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="<?php echo esc_url(home_url('/services/#service-international')); ?>" class="btn-roster-pill">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-taxation" data-keywords="overseas non-resident nrp section 7e property tax deemed income roshan digital rda form 116 wealth remittance">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar" style="background: linear-gradient(135deg, #0D9488, #2DD4BF); color: #fff;">OP</div>
+                      <div>
+                        <strong>Overseas Pakistanis Desk</strong>
+                        <span class="roster-lead-sub">Expat Tax &amp; Real Estate Wing</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-overseas">Section 7E Specialist</span></td>
+                  <td>Property Tax Clearance &amp; Non-Resident Returns</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Remote Online Filing
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="<?php echo esc_url(home_url('/services/#service-overseas')); ?>" class="btn-roster-pill">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-audit" data-keywords="npo ngo trust non-profit 100c ead donor grant audit usaid un akdn ppaf public financial management pfm">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar" style="background: linear-gradient(135deg, #D97706, #FBBF24); color: #fff;">NP</div>
+                      <div>
+                        <strong>NPO &amp; Donor Compliance Desk</strong>
+                        <span class="roster-lead-sub">Development Sector Advisory</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-npo">100C &bull; EAD Verified</span></td>
+                  <td>Section 100C Exemption &amp; Donor Grant Audits</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      AKDN / PPAF Standard
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="<?php echo esc_url(home_url('/services/#service-npo')); ?>" class="btn-roster-pill">View details</a>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

@@ -4,7 +4,7 @@ Theme URI: https://ssprestigeconsultants.com
 Author: SS Prestige Consultants LLP
 Author URI: https://ssprestigeconsultants.com
 Description: High-converting, bespoke corporate theme for S&S PRESTIGE CONSULTANTS LLP.
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 Text Domain: ssprestige
 */
@@ -1984,4 +1984,182 @@ img, video {
 
 .floating-whatsapp-pill:hover {
   transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Reference Enhancements: Entity Comparison, Document Checklist, Tech Stack
+   ========================================================================== */
+
+/* Badges for Specialized Desks */
+.badge-intl {
+  background: rgba(99, 102, 241, 0.12);
+  color: #4F46E5;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+.badge-overseas {
+  background: rgba(13, 148, 136, 0.12);
+  color: #0D9488;
+  border: 1px solid rgba(13, 148, 136, 0.25);
+}
+.badge-npo {
+  background: rgba(217, 119, 6, 0.12);
+  color: #D97706;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+}
+.badge-trade {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284C7;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+/* Entity Comparison Table */
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 18px;
+  border: 1px solid #E2E8F0;
+  background: #FFFFFF;
+  margin-bottom: 32px;
+}
+.entity-compare-table {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13.5px;
+}
+.entity-compare-table th {
+  background: #0F172A;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.entity-compare-table th:first-child {
+  border-top-left-radius: 16px;
+}
+.entity-compare-table th:last-child {
+  border-top-right-radius: 16px;
+}
+.entity-compare-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #F1F5F9;
+  color: #334155;
+  vertical-align: middle;
+}
+.entity-compare-table tr:last-child td {
+  border-bottom: none;
+}
+.entity-compare-table tr:hover td {
+  background: rgba(248, 250, 252, 0.85);
+}
+.entity-name-cell {
+  font-weight: 700;
+  color: #0F172A;
+  font-size: 14px;
+}
+.liability-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.liability-limited {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+.liability-unlimited {
+  background: rgba(239, 68, 68, 0.12);
+  color: #DC2626;
+}
+
+/* Document Readiness Checklist */
+.doc-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.doc-checklist-card {
+  background: rgba(248, 250, 252, 0.95);
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.doc-checklist-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.08);
+}
+.doc-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1A6BFF;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.doc-card-title {
+  font-weight: 800;
+  font-size: 15.5px;
+  color: #0F172A;
+  margin-bottom: 8px;
+}
+.doc-card-text {
+  font-size: 13px;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Financial Technology & ERP Stack */
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.tech-stack-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.tech-stack-card:hover {
+  transform: translateY(-3px);
+  border-color: #1A6BFF;
+  box-shadow: 0 12px 24px -8px rgba(26, 107, 255, 0.15);
+}
+.tech-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(26, 107, 255, 0.08);
+  color: #1A6BFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.tech-card-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0F172A;
+  margin-bottom: 4px;
+}
+.tech-card-badge {
+  font-size: 11px;
+  color: #64748B;
+  font-weight: 600;
 }

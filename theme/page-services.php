@@ -12,27 +12,31 @@ get_header(); ?>
     
     <!-- Hero / Eyebrow Header -->
     <div class="section-title-wrap" style="text-align: center; margin-bottom: 48px;">
-      <span class="section-eyebrow">Practice Areas</span>
+      <span class="section-eyebrow">Comprehensive Practice Areas</span>
       <h1 class="section-heading" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 16px;">
         Strategic Financial, Tax &amp; Corporate Advisory
       </h1>
-      <p class="section-subtext" style="max-width: 740px; margin: 0 auto; color: #64748B; font-size: clamp(14px, 1.6vw, 16.5px); line-height: 1.65;">
-        Tailored consulting solutions for corporate enterprises, fast-growing startups, non-profits, and multinational corporations operating across Pakistan and international markets.
+      <p class="section-subtext" style="max-width: 820px; margin: 0 auto; color: #64748B; font-size: clamp(14px, 1.6vw, 16.5px); line-height: 1.65;">
+        Complete corporate governance, statutory compliance, tax optimization, and financial architecture. Combining domestic regulatory mastery with global cross-border standards for corporations, overseas Pakistanis, foreign investors, and non-profits.
       </p>
     </div>
 
     <!-- Quick Jump Sub-Navigation -->
-    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 40px;">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 48px;">
       <a href="#service-tax" class="service-tab-btn" style="text-decoration: none;">Taxation &amp; FBR</a>
-      <a href="#service-secp" class="service-tab-btn" style="text-decoration: none;">SECP Corporate</a>
+      <a href="#service-secp" class="service-tab-btn" style="text-decoration: none;">SECP Corporate &amp; LLP</a>
+      <a href="#service-international" class="service-tab-btn" style="text-decoration: none;">International Desk &amp; FDI</a>
+      <a href="#service-overseas" class="service-tab-btn" style="text-decoration: none;">Overseas Pakistanis</a>
       <a href="#service-accounting" class="service-tab-btn" style="text-decoration: none;">Cloud Bookkeeping</a>
       <a href="#service-audit" class="service-tab-btn" style="text-decoration: none;">Audit &amp; Assurance</a>
       <a href="#service-cfo" class="service-tab-btn" style="text-decoration: none;">Virtual CFO &amp; ERP</a>
-      <a href="#service-hr" class="service-tab-btn" style="text-decoration: none;">Org Design</a>
+      <a href="#service-npo" class="service-tab-btn" style="text-decoration: none;">NPO &amp; Donor Sector</a>
+      <a href="#service-compare" class="service-tab-btn" style="text-decoration: none;">Entity Comparison</a>
+      <a href="#service-tech" class="service-tab-btn" style="text-decoration: none;">Tech Stack</a>
     </div>
 
     <!-- Practice Areas Grid (Fluid Auto-adjusting) -->
-    <div class="responsive-grid-auto" style="gap: 28px; margin-bottom: 56px;">
+    <div class="responsive-grid-auto" style="gap: 28px; margin-bottom: 64px;">
       
       <!-- Card 1: FBR Taxation -->
       <div class="frosted-card" id="service-tax" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
@@ -44,12 +48,13 @@ get_header(); ?>
           <span class="roster-cred-badge badge-tax">FBR IRIS</span>
         </div>
         <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
-          Comprehensive direct and indirect tax management: annual corporate &amp; individual returns, Active Taxpayer List (ATL) activation, sales tax on services (PRA, SRB, KPRA, BRA), and defense against Section 122/177 notices.
+          Comprehensive direct and indirect tax management: annual corporate &amp; individual returns, Active Taxpayer List (ATL) activation, provincial sales tax on services (PRA, SRB, KPRA, BRA), FASTER sales tax refunds, and defense against Section 122/177 notices.
         </p>
         <ul class="service-bullets" style="margin-bottom: 24px;">
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Annual Corporate &amp; Individual Income Tax Returns (Form 114)</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Monthly Withholding &amp; Provincial Sales Tax Filings</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Tax Audit Defense &amp; Representation (CIR Appeals &amp; ATIR)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Monthly Withholding (Section 165) &amp; Provincial Sales Tax Filings</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> FASTER Automated Sales Tax Refund Filing for Exporters</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Tax Audit Defense &amp; Appellate Representation (CIR Appeals &amp; ATIR)</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> IT Freelancer 0.25% PSEB Final Tax Concession Filings</li>
         </ul>
         <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
@@ -64,17 +69,18 @@ get_header(); ?>
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
         </div>
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
-          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">SECP Company Registration</h2>
+          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">SECP Company &amp; LLP Registration</h2>
           <span class="roster-cred-badge badge-secp">SECP Agent</span>
         </div>
         <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
-          Digital corporate incorporation under the Companies Act 2017: Private Limited, Single Member Company (SMC-Private), Limited Liability Partnership (LLP), statutory annual filings, and Board of Investment (BOI) investor clearance.
+          Digital corporate incorporation under the Companies Act 2017 &amp; Limited Liability Partnership Act 2017: Private Limited, Single Member Company (SMC-Private), LLP, statutory annual governance, and corporate banking approvals.
         </p>
         <ul class="service-bullets" style="margin-bottom: 24px;">
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Digital Incorporation via SECP eZfile in 3–5 Business Days</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> MOA &amp; AOA Drafting &amp; Company NTN Registration</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Memorandum &amp; Articles (MOA/AOA) &amp; Partnership Deed Drafting</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Form A, Form 29 &amp; Annual Statutory Governance Returns</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> BOI Foreign Investor Desk &amp; Work Permit Approvals</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Corporate Bank Account Opening Assistance &amp; Board Resolutions</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Statutory Auditor Appointment &amp; Compliance Filing within 90 Days</li>
         </ul>
         <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
           <span style="font-size: 12px; font-weight: 600; color: #64748B;">Fast-Track: 3–5 Days</span>
@@ -82,7 +88,57 @@ get_header(); ?>
         </div>
       </div>
 
-      <!-- Card 3: Cloud Bookkeeping & Payroll -->
+      <!-- Card 3: International Desk & FDI (URCA PK Benchmark) -->
+      <div class="frosted-card" id="service-international" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
+        <div class="pillar-icon-box" style="margin-bottom: 20px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
+          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">International Desk &amp; FDI</h2>
+          <span class="roster-cred-badge badge-intl">BOI &bull; SBP Desk</span>
+        </div>
+        <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
+          Cross-border advisory for multinational corporations, foreign investors, and international groups entering Pakistan. Turnkey guidance on Branch vs. Liaison offices, Board of Investment approvals, profit repatriation, and Transfer Pricing.
+        </p>
+        <ul class="service-bullets" style="margin-bottom: 24px;">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Branch Office &amp; Liaison Office Registration with BOI &amp; MOI Clearance</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 100% Foreign-Owned Subsidiary Incorporation under Companies Act 2017</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> State Bank of Pakistan (SBP) Foreign Exchange Manual &amp; Profit Repatriation</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Transfer Pricing Documentation (Local File, Master File &amp; CbCR)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Double Taxation Avoidance Agreement (DTAA) Cross-Border Structuring</li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
+          <span style="font-size: 12px; font-weight: 600; color: #64748B;">Cross-Border Specialist</span>
+          <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="btn-roster-pill">Contact Desk</a>
+        </div>
+      </div>
+
+      <!-- Card 4: Overseas Pakistanis Advisory Desk (URCA PK Benchmark) -->
+      <div class="frosted-card" id="service-overseas" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
+        <div class="pillar-icon-box" style="margin-bottom: 20px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
+          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">Overseas Pakistanis Advisory Desk</h2>
+          <span class="roster-cred-badge badge-overseas">Section 7E Specialist</span>
+        </div>
+        <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
+          Remote tax and legal property advisory for non-resident Pakistanis (NRPs) in the UK, USA, Canada, GCC, and Europe. Protecting foreign earnings, resolving Section 7E property tax blocks, and maintaining compliant FBR status.
+        </p>
+        <ul class="service-bullets" style="margin-bottom: 24px;">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Section 7E Property Tax Exemption Certificates &amp; Sale/Transfer Clearances</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Non-Resident Tax Status Determination (Section 82 / 183-Day Rule)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Roshan Digital Account (RDA) Withholding Tax &amp; Inward Remittance Advisory</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Wealth Statement (Form 116) Foreign Assets Declaration &amp; Reconciliations</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Remote Representation via Special Power of Attorney (SPA)</li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
+          <span style="font-size: 12px; font-weight: 600; color: #64748B;">100% Remote Service</span>
+          <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="btn-roster-pill">Consult Remotely</a>
+        </div>
+      </div>
+
+      <!-- Card 5: Cloud Bookkeeping & BPO -->
       <div class="frosted-card" id="service-accounting" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
         <div class="pillar-icon-box" style="margin-bottom: 20px;">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
@@ -99,6 +155,7 @@ get_header(); ?>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Monthly IFRS balance sheets, P&amp;L statements, and cash flows</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated payroll processing compliant with EOBI &amp; PESSI</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> AP/AR aging analysis &amp; vendor payment governance</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Cloud accounting system migration &amp; Chart of Accounts setup</li>
         </ul>
         <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
           <span style="font-size: 12px; font-weight: 600; color: #64748B;">Dedicated Accountant</span>
@@ -106,7 +163,7 @@ get_header(); ?>
         </div>
       </div>
 
-      <!-- Card 4: Audit & Assurance -->
+      <!-- Card 6: Audit & Assurance -->
       <div class="frosted-card" id="service-audit" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
         <div class="pillar-icon-box" style="margin-bottom: 20px;">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
@@ -123,6 +180,7 @@ get_header(); ?>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Internal Control Gap Analysis &amp; SOP Risk Frameworks</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Donor Grant Audits &amp; Agreed-Upon Procedures (AUP)</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Financial Due Diligence for Investors &amp; Acquisitions</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Special Investigative &amp; Forensic Review Engagements</li>
         </ul>
         <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
           <span style="font-size: 12px; font-weight: 600; color: #64748B;">FY 2025–26 Slots</span>
@@ -130,7 +188,32 @@ get_header(); ?>
         </div>
       </div>
 
-      <!-- Card 5: Virtual CFO & ERP -->
+      <!-- Card 7: NPO, Trusts & Development Sector (Sunil Babar Track Record) -->
+      <div class="frosted-card" id="service-npo" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
+        <div class="pillar-icon-box" style="margin-bottom: 20px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
+          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">NPO &amp; Development Sector (PFM)</h2>
+          <span class="roster-cred-badge badge-npo">100C &bull; EAD Verified</span>
+        </div>
+        <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
+          Specialized regulatory guidance for non-profits, international NGOs, trusts, and donor-funded social development programs. Backed by verified advisory leadership with AKRSP, PPAF, and Sightsavers.
+        </p>
+        <ul class="service-bullets" style="margin-bottom: 24px;">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Section 100C FBR Tax Exemption Approval &amp; Renewal Filings</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Economic Affairs Division (EAD) Registration &amp; Foreign Funding MoUs</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Institutional Donor Grant Audits (USAID, UN, World Bank, FCDO, AKDN)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Public Financial Management (PFM) &amp; Multi-Currency Ledger Systems</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Pakistan Centre for Philanthropy (PCP) Certification Preparation</li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
+          <span style="font-size: 12px; font-weight: 600; color: #64748B;">Sector Experience: 18+ Yrs</span>
+          <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="btn-roster-pill">Consult NPO Team</a>
+        </div>
+      </div>
+
+      <!-- Card 8: Virtual CFO & ERP -->
       <div class="frosted-card" id="service-cfo" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
         <div class="pillar-icon-box" style="margin-bottom: 20px;">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -146,7 +229,8 @@ get_header(); ?>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 5-Year Integrated Financial Strategy &amp; Board Reporting</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> SAP S/4HANA &amp; Oracle ERP Implementation Governance</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Power BI Real-Time Financial Decision Dashboards</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Capital Structuring &amp; Bank Financing Facilities</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Capital Structuring &amp; Commercial Bank Financing Facilities</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Working Capital Optimization &amp; Runway Extensions</li>
         </ul>
         <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
           <span style="font-size: 12px; font-weight: 600; color: #64748B;">Executive Retainer</span>
@@ -154,7 +238,7 @@ get_header(); ?>
         </div>
       </div>
 
-      <!-- Card 6: HR Restructuring -->
+      <!-- Card 9: HR & Org Design -->
       <div class="frosted-card" id="service-hr" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
         <div class="pillar-icon-box" style="margin-bottom: 20px;">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -170,7 +254,8 @@ get_header(); ?>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Job Grading &amp; Executive Evaluation Frameworks</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Delegation of Authority (DOA) Matrix Design</li>
           <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Cross-Functional Reporting Lines Harmonization</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Provident, Gratuity &amp; Pension Fund Structuring</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Provident, Gratuity &amp; Pension Fund Structuring under Sixth Schedule</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> EOBI &amp; PESSI Social Security Inspection Defense</li>
         </ul>
         <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
           <span style="font-size: 12px; font-weight: 600; color: #64748B;">Turnaround: 2–4 Weeks</span>
@@ -178,6 +263,191 @@ get_header(); ?>
         </div>
       </div>
 
+    </div>
+
+    <!-- Interactive Entity Selection Comparison Table (Virtual Accountants Benchmark) -->
+    <div class="frosted-card" id="service-compare" style="padding: clamp(24px, 4vw, 44px); border-radius: 28px; margin-bottom: 56px; background: rgba(255, 255, 255, 0.95);">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <span class="section-eyebrow">Decision Matrix</span>
+        <h2 style="font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: #0F172A; margin-bottom: 12px;">
+          Entity Selection &amp; Business Formation Guide
+        </h2>
+        <p style="font-size: 14.5px; color: #64748B; max-width: 720px; margin: 0 auto;">
+          Choose the right legal framework for your venture in Pakistan. Compare governing bodies, personal liability, statutory compliance, and tax advantages.
+        </p>
+      </div>
+
+      <div class="table-scroll-wrapper">
+        <table class="entity-compare-table">
+          <thead>
+            <tr>
+              <th>Legal Structure</th>
+              <th>Governing Body</th>
+              <th>Min. Members</th>
+              <th>Personal Liability</th>
+              <th>Legal Personality</th>
+              <th>Statutory Audit</th>
+              <th>Best Suited For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="entity-name-cell">Sole Proprietorship</td>
+              <td>FBR (Direct Tax)</td>
+              <td>1 Individual</td>
+              <td><span class="liability-tag liability-unlimited">Unlimited</span></td>
+              <td>Same as Owner</td>
+              <td>Optional</td>
+              <td>Solo retail, local vendors &amp; individual freelancers</td>
+            </tr>
+            <tr>
+              <td class="entity-name-cell">Partnership (AOP / Form C)</td>
+              <td>Registrar of Firms</td>
+              <td>2 to 20 Partners</td>
+              <td><span class="liability-tag liability-unlimited">Joint &amp; Several</span></td>
+              <td>Separate for Tax Only</td>
+              <td>Optional</td>
+              <td>Small trading firms, multi-founder local businesses</td>
+            </tr>
+            <tr>
+              <td class="entity-name-cell">SMC-Private Limited</td>
+              <td>SECP (Companies Act 2017)</td>
+              <td>1 Director / Shareholder</td>
+              <td><span class="liability-tag liability-limited">Limited to Shares</span></td>
+              <td>Separate Legal Person</td>
+              <td>Mandatory (Capital &gt; 1M)</td>
+              <td>Single-founder startups wanting limited liability</td>
+            </tr>
+            <tr>
+              <td class="entity-name-cell">Private Limited Company</td>
+              <td>SECP (Companies Act 2017)</td>
+              <td>2 to 50 Shareholders</td>
+              <td><span class="liability-tag liability-limited">Limited to Shares</span></td>
+              <td>Separate Legal Person</td>
+              <td>Mandatory by Law</td>
+              <td>Scalable enterprises, VC/angel funded startups, tech firms</td>
+            </tr>
+            <tr>
+              <td class="entity-name-cell">Limited Liability Partnership (LLP)</td>
+              <td>SECP (LLP Act 2017)</td>
+              <td>2+ Designated Partners</td>
+              <td><span class="liability-tag liability-limited">Limited to Agreed Contribution</span></td>
+              <td>Separate Body Corporate</td>
+              <td>Subject to Turnover</td>
+              <td>Professional advisors, consultants, CA firms &amp; joint ventures</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Document Readiness Checklist -->
+      <div style="margin-top: 40px;">
+        <h3 style="font-size: 18px; font-weight: 800; color: #0F172A; margin-bottom: 20px; text-align: center;">
+          Document Readiness Checklist — What You Need to Get Started
+        </h3>
+        <div class="doc-checklist-grid">
+          <div class="doc-checklist-card">
+            <span class="doc-step-num">1</span>
+            <div class="doc-card-title">Identity Verification</div>
+            <p class="doc-card-text">Valid CNIC / NICOP for Pakistani citizens; passport copy with valid Pakistan visa for foreign directors.</p>
+          </div>
+          <div class="doc-checklist-card">
+            <span class="doc-step-num">2</span>
+            <div class="doc-card-title">Entity Naming &amp; Objects</div>
+            <p class="doc-card-text">Three proposed names in order of preference plus principal commercial activity description for SECP name availability.</p>
+          </div>
+          <div class="doc-checklist-card">
+            <span class="doc-step-num">3</span>
+            <div class="doc-card-title">Registered Office Proof</div>
+            <p class="doc-card-text">Official business address in Pakistan, recent utility bill copy, and tenancy agreement or ownership document.</p>
+          </div>
+          <div class="doc-checklist-card">
+            <span class="doc-step-num">4</span>
+            <div class="doc-card-title">Capital &amp; Shareholding</div>
+            <p class="doc-card-text">Authorized &amp; paid-up capital distribution ratio, director appointments, and corporate bank account resolution.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Financial Technology & Supported ERP Stack (Virtual Accountants Benchmark) -->
+    <div class="frosted-card" id="service-tech" style="padding: clamp(24px, 4vw, 44px); border-radius: 28px; margin-bottom: 56px; background: rgba(255, 255, 255, 0.95);">
+      <div style="text-align: center;">
+        <span class="section-eyebrow">Enterprise Stack</span>
+        <h2 style="font-size: clamp(20px, 3vw, 26px); font-weight: 800; color: #0F172A; margin-bottom: 8px;">
+          Financial Technology &amp; ERP Platforms We Operate
+        </h2>
+        <p style="font-size: 14.5px; color: #64748B; max-width: 680px; margin: 0 auto;">
+          We operate across industry-leading cloud accounting, enterprise ERPs, business intelligence, and statutory government portals.
+        </p>
+
+        <div class="tech-stack-grid">
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+            </div>
+            <div class="tech-card-name">QuickBooks Online</div>
+            <div class="tech-card-badge">Certified ProAdvisor</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            </div>
+            <div class="tech-card-name">Xero Accounting</div>
+            <div class="tech-card-badge">Certified Practice</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="tech-card-name">SAP S/4HANA</div>
+            <div class="tech-card-badge">Enterprise Migration</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div class="tech-card-name">Oracle Cloud ERP</div>
+            <div class="tech-card-badge">R2R &bull; P2P Architecture</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <div class="tech-card-name">Microsoft Power BI</div>
+            <div class="tech-card-badge">Financial Dashboards</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="tech-card-name">FBR IRIS &amp; POS</div>
+            <div class="tech-card-badge">Direct API Invoicing</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <div class="tech-card-name">SECP eZfile</div>
+            <div class="tech-card-badge">Digital Corporate Agent</div>
+          </div>
+
+          <div class="tech-stack-card">
+            <div class="tech-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div class="tech-card-name">Pakistan Single Window</div>
+            <div class="tech-card-badge">PSW &bull; WeBOC Customs</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Sector Experience Matrix -->
@@ -194,28 +464,28 @@ get_header(); ?>
         <div style="background: rgba(248, 250, 252, 0.9); border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px;">
           <div style="font-weight: 800; font-size: 16px; color: #0F172A; margin-bottom: 6px;">Technology &amp; IT Exporters</div>
           <p style="font-size: 13px; color: #64748B; margin: 0; line-height: 1.6;">
-            PSEB registration, 0.25% export tax regime, US/UK Delaware/LLC multi-entity structure, and software revenue recognition.
+            PSEB registration, 0.25% export tax regime, SBP IT foreign exchange retention accounts, US/UK Delaware/LLC multi-entity structure, and software revenue recognition.
           </p>
         </div>
 
         <div style="background: rgba(248, 250, 252, 0.9); border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px;">
           <div style="font-weight: 800; font-size: 16px; color: #0F172A; margin-bottom: 6px;">Manufacturing &amp; Industrial</div>
           <p style="font-size: 13px; color: #64748B; margin: 0; line-height: 1.6;">
-            Cost of goods sold (COGS) tracking, inventory valuations, raw material import sales tax adjustments, and standard costing.
+            Cost of goods sold (COGS) tracking, inventory valuations, raw material import sales tax adjustments, FASTER refund processing, and standard costing.
           </p>
         </div>
 
         <div style="background: rgba(248, 250, 252, 0.9); border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px;">
           <div style="font-weight: 800; font-size: 16px; color: #0F172A; margin-bottom: 6px;">NGOs, Trusts &amp; Development</div>
           <p style="font-size: 13px; color: #64748B; margin: 0; line-height: 1.6;">
-            Section 100C tax exemptions, PCP certification, donor grant compliance audits, and multi-currency project accounting.
+            Section 100C tax exemptions, EAD MoU registration, PCP certification, donor grant compliance audits (AKDN, PPAF, Sightsavers), and multi-currency project accounting.
           </p>
         </div>
 
         <div style="background: rgba(248, 250, 252, 0.9); border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px;">
-          <div style="font-weight: 800; font-size: 16px; color: #0F172A; margin-bottom: 6px;">Retail, E-Commerce &amp; Services</div>
+          <div style="font-weight: 800; font-size: 16px; color: #0F172A; margin-bottom: 6px;">Real Estate, Construction &amp; Expat</div>
           <p style="font-size: 13px; color: #64748B; margin: 0; line-height: 1.6;">
-            POS integration with FBR digital invoicing, provincial sales tax on services (PRA/SRB), and multi-channel ledger sync.
+            Section 7E property deemed income tax clearance certificates, builder/developer tax regimes, Capital Value Tax (CVT), and non-resident property tax management.
           </p>
         </div>
 
