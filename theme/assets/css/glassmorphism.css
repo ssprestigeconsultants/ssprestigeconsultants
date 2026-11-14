@@ -61,8 +61,7 @@
 }
 
 .floating-navbar-container {
-  width: 100%;
-  max-width: var(--container-max);
+  width: min(96%, 1440px);
   margin: 0 auto;
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
@@ -380,14 +379,16 @@
     padding: 0 8px;
   }
   .floating-navbar-container {
-    padding: 8px 12px;
+    padding: 6px 10px;
+    border-radius: 14px;
+    gap: 8px;
   }
   .brand-tagline {
     display: none; /* Keep clean on small phones */
   }
   .btn-primary-glow {
-    padding: 8px 12px;
-    font-size: 12px;
+    padding: 5px 9px;
+    font-size: 11.5px;
   }
 }
 
