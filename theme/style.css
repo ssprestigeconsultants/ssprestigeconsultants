@@ -511,12 +511,50 @@ Text Domain: ssprestige
   }
 
   .btn-primary-glow {
-    padding: 7px 12px;
+    padding: 7px 14px;
     font-size: 12px;
   }
 
   .btn-primary-glow svg {
+    display: inline-block;
+  }
+
+  /* Mobile Drawer Priority CTAs */
+  .mobile-drawer-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(226, 232, 240, 0.8);
+  }
+
+  .mobile-drawer-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .mobile-drawer-phone {
+    display: inline-flex !important;
+    width: 100%;
+    justify-content: center;
+    padding: 11px 18px;
+    font-size: 13.5px;
+    background: #FFFFFF;
+  }
+}
+
+/* Phones & Small Screens: Hide ' Consultation' to display sleek 'Book ->' and preserve clean spacing */
+@media (max-width: 640px) {
+  .btn-text-full {
     display: none;
+  }
+  .btn-primary-glow {
+    padding: 6px 11px;
+    font-size: 12px;
+    gap: 4px;
   }
 }
 
@@ -533,9 +571,9 @@ Text Domain: ssprestige
   }
 
   .brand-icon-box {
-    width: 30px;
-    height: 30px;
-    font-size: 0.8rem;
+    width: 32px;
+    height: 32px;
+    font-size: 0.82rem;
   }
 
   .brand-name {
@@ -543,14 +581,34 @@ Text Domain: ssprestige
   }
 
   .btn-primary-glow {
-    padding: 6px 10px;
+    padding: 5px 9px;
     font-size: 11.5px;
   }
 
   .mobile-nav-toggle {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     padding: 5px 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .floating-header {
+    padding: 0 4px;
+  }
+
+  .floating-navbar-container {
+    padding: 5px 8px;
+    gap: 6px;
+  }
+
+  .brand-name {
+    font-size: 0.76rem;
+  }
+
+  .btn-primary-glow {
+    padding: 4px 7px;
+    font-size: 10.5px;
   }
 }
 

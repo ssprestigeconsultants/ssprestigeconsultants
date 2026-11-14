@@ -109,6 +109,41 @@ function ss_prestige_scripts() {
         'phone'     => '+923464439391',
         'whatsapp'  => 'https://wa.me/923464439391?text=Hello%20SS%20Prestige%20Consultants%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.',
     ]);
+
+    // Universal Consultation Button Handler & Smooth Scroll Guarantee
+    wp_add_inline_script('ss-prestige-main-js', '
+      document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("click", function(e) {
+          var btn = e.target.closest("a[href*=\"#consultation\"]");
+          if (!btn) return;
+          var target = document.getElementById("consultation");
+          if (target) {
+            e.preventDefault();
+            var navMenu = document.querySelector(".nav-menu-wrapper");
+            if (navMenu && navMenu.classList.contains("mobile-open")) {
+              navMenu.classList.remove("mobile-open");
+            }
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            if (history.pushState) {
+              history.pushState(null, null, "#consultation");
+            }
+            var field = target.querySelector("input[name=\"client_name\"]");
+            if (field) {
+              setTimeout(function() { field.focus(); }, 600);
+            }
+          }
+        });
+
+        if (window.location.hash === "#consultation") {
+          setTimeout(function() {
+            var section = document.getElementById("consultation");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }, 350);
+        }
+      });
+    ');
 }
 add_action('wp_enqueue_scripts', 'ss_prestige_scripts');
 
