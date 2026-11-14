@@ -16,7 +16,7 @@ get_header(); ?>
       <h1 class="section-heading" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 16px;">
         Strategic Financial, Tax &amp; Corporate Advisory
       </h1>
-      <p class="section-subtext" style="max-width: 820px; margin: 0 auto; color: #64748B; font-size: clamp(14px, 1.6vw, 16.5px); line-height: 1.65;">
+      <p class="section-subtext" style="max-width: 840px; margin: 0 auto; color: #64748B; font-size: clamp(14px, 1.6vw, 16.5px); line-height: 1.65;">
         Complete corporate governance, statutory compliance, tax optimization, and financial architecture. Combining domestic regulatory mastery with global cross-border standards for corporations, overseas Pakistanis, foreign investors, and non-profits.
       </p>
     </div>
@@ -31,8 +31,12 @@ get_header(); ?>
       <a href="#service-audit" class="service-tab-btn" style="text-decoration: none;">Audit &amp; Assurance</a>
       <a href="#service-cfo" class="service-tab-btn" style="text-decoration: none;">Virtual CFO &amp; ERP</a>
       <a href="#service-npo" class="service-tab-btn" style="text-decoration: none;">NPO &amp; Donor Sector</a>
+      <a href="#service-trade" class="service-tab-btn" style="text-decoration: none;">Trade &amp; WeBOC</a>
+      <a href="#service-eor" class="service-tab-btn" style="text-decoration: none;">EoR &amp; Payroll</a>
+      <a href="#service-salestax" class="service-tab-btn" style="text-decoration: none;">Sales Tax Matrix</a>
       <a href="#service-compare" class="service-tab-btn" style="text-decoration: none;">Entity Comparison</a>
       <a href="#service-tech" class="service-tab-btn" style="text-decoration: none;">Tech Stack</a>
+      <a href="#service-insights" class="service-tab-btn" style="text-decoration: none;">Regulatory Insights</a>
     </div>
 
     <!-- Practice Areas Grid (Fluid Auto-adjusting) -->
@@ -263,6 +267,149 @@ get_header(); ?>
         </div>
       </div>
 
+      <!-- Card 10: Trade Facilitation & Commercial Licensing (URCA PK Benchmark) -->
+      <div class="frosted-card" id="service-trade" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
+        <div class="pillar-icon-box" style="margin-bottom: 20px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
+          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">Trade Facilitation &amp; WeBOC</h2>
+          <span class="roster-cred-badge badge-trade">PSW &bull; WeBOC</span>
+        </div>
+        <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
+          End-to-end import and export commercial licensing. Setting up Pakistan Single Window (PSW), customs WeBOC user IDs, and formal Chamber of Commerce memberships in Islamabad, Rawalpindi, and Gilgit.
+        </p>
+        <ul class="service-bullets" style="margin-bottom: 24px;">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Pakistan Single Window (PSW) Subscription &amp; Biometric Verification</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> WeBOC (Web Based One Customs) User ID Issuance &amp; Green Channel Clearance</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Chamber of Commerce Membership (ICCI Islamabad, RCCI, GBCCI Gilgit)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Free Tax Number (FTN) &amp; Sales Tax Registration for Importers/Exporters</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Trade Documentation, Letter of Credit (LC) Compliance &amp; SBP E-Form Filings</li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
+          <span style="font-size: 12px; font-weight: 600; color: #64748B;">Turnaround: 3–5 Days</span>
+          <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="btn-roster-pill">Setup Trade Desk</a>
+        </div>
+      </div>
+
+      <!-- Card 11: Employer of Record (EoR) & HR Statutory Compliance (URCA PK Benchmark) -->
+      <div class="frosted-card" id="service-eor" style="padding: clamp(24px, 3.5vw, 36px); border-radius: 24px; background: rgba(255, 255, 255, 0.9);">
+        <div class="pillar-icon-box" style="margin-bottom: 20px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
+          <h2 style="font-size: clamp(19px, 2.5vw, 22px); font-weight: 800; color: #0F172A; margin: 0;">Employer of Record (EoR) &amp; HR</h2>
+          <span class="roster-cred-badge badge-eor">EOBI &bull; PESSI</span>
+        </div>
+        <p style="font-size: 14px; line-height: 1.6; color: #64748B; margin-bottom: 16px;">
+          Full workforce employment solution for international companies hiring talent in Pakistan without a local legal entity. Complete payroll, withholding tax certificates, EOBI, and social security coverage.
+        </p>
+        <ul class="service-bullets" style="margin-bottom: 24px;">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Legal Employer of Record (EoR) for Foreign Groups in Pakistan</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated Monthly Payroll Disbursement &amp; Payslip Generation</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> EOBI (Employees' Old-Age Benefits) Employee Registration &amp; Challans</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Provincial Social Security (PESSI / SESSI / KPRA) Monthly Compliance</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Annual Withholding Tax Deduction Certificates (Form 149 / CPR)</li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 16px;">
+          <span style="font-size: 12px; font-weight: 600; color: #64748B;">Workforce Ready</span>
+          <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="btn-roster-pill">Retain EoR</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Multi-Jurisdictional Provincial Sales Tax & FASTER Refund Matrix (Virtual Accountants Benchmark) -->
+    <div class="frosted-card" id="service-salestax" style="padding: clamp(24px, 4vw, 44px); border-radius: 28px; margin-bottom: 56px; background: rgba(255, 255, 255, 0.95);">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <span class="section-eyebrow">Revenue Architecture</span>
+        <h2 style="font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: #0F172A; margin-bottom: 12px;">
+          Multi-Jurisdictional Provincial Sales Tax &amp; FASTER Refund Matrix
+        </h2>
+        <p style="font-size: 14.5px; color: #64748B; max-width: 760px; margin: 0 auto;">
+          Pakistan enforces separate sales tax regimes for goods (federal) and services (provincial). S&amp;S PRESTIGE CONSULTANTS LLP manages multi-provincial tax registrations, input-output reconciliations, and automated refund systems across all jurisdictions.
+        </p>
+      </div>
+
+      <div class="table-scroll-wrapper">
+        <table class="salestax-matrix-table">
+          <thead>
+            <tr>
+              <th>Revenue Authority</th>
+              <th>Jurisdiction</th>
+              <th>Taxable Base</th>
+              <th>Standard Rate</th>
+              <th>Monthly Return Due Date</th>
+              <th>Key Strategic Advantage &amp; Compliance Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tax-authority-pill auth-fbr">FBR Federal</span></td>
+              <td>All Pakistan</td>
+              <td>Sales Tax on Goods</td>
+              <td>18% (Standard)</td>
+              <td>15th Payment / 18th Return</td>
+              <td>FASTER automated refund processing for zero-rated exporters, STARR electronic validation, Annexure C reconciliation.</td>
+            </tr>
+            <tr>
+              <td><span class="tax-authority-pill auth-pra">PRA Punjab</span></td>
+              <td>Punjab Province</td>
+              <td>Sales Tax on Services</td>
+              <td>16% (Standard)</td>
+              <td>15th Payment / 18th Return</td>
+              <td>Withholding sales tax compliance under Punjab Sales Tax on Services Act, input tax credit adjustments on inter-provincial services.</td>
+            </tr>
+            <tr>
+              <td><span class="tax-authority-pill auth-srb">SRB Sindh</span></td>
+              <td>Sindh Province</td>
+              <td>Sales Tax on Services</td>
+              <td>15% (Standard)</td>
+              <td>15th Payment / 18th Return</td>
+              <td>E-invoicing integration, port &amp; logistics services compliance, financial service withholding management.</td>
+            </tr>
+            <tr>
+              <td><span class="tax-authority-pill auth-kpra">KPRA Khyber Pakhtunkhwa</span></td>
+              <td>KP Province</td>
+              <td>Sales Tax on Services</td>
+              <td>15% (Standard)</td>
+              <td>15th Payment / 18th Return</td>
+              <td>Special concessions for IT exporters, construction services, and regional infrastructure developmental projects.</td>
+            </tr>
+            <tr>
+              <td><span class="tax-authority-pill auth-bra">BRA Balochistan</span></td>
+              <td>Balochistan</td>
+              <td>Sales Tax on Services</td>
+              <td>15% (Standard)</td>
+              <td>15th Payment / 18th Return</td>
+              <td>Mining, energy, infrastructure, and CPEC-related cross-border logistics service tax clearances.</td>
+            </tr>
+            <tr>
+              <td><span class="tax-authority-pill auth-gb">Gilgit-Baltistan &amp; ICT</span></td>
+              <td>Gilgit &amp; Islamabad</td>
+              <td>Services &amp; Regional Trade</td>
+              <td>Regional Directives</td>
+              <td>Statutory Calendar</td>
+              <td>Direct physical chamber in Gilgit (Cinema Bazaar, Airport Road) providing on-ground regional tax exemptions and GB trade advisory.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FASTER Refund Processing Callout Box -->
+      <div style="background: linear-gradient(135deg, rgba(26, 107, 255, 0.05) 0%, rgba(37, 211, 102, 0.05) 100%); border: 1px solid rgba(26, 107, 255, 0.2); border-radius: 18px; padding: 24px; margin-top: 24px; display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #1A6BFF; color: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div style="flex: 1; min-width: 260px;">
+          <div style="font-size: 16px; font-weight: 800; color: #0F172A; margin-bottom: 4px;">FASTER Automated Sales Tax Refund System for Exporters</div>
+          <p style="font-size: 13.5px; color: #64748B; line-height: 1.6; margin: 0;">
+            Exporters face critical liquidity traps when input sales tax is locked in government balances. S&amp;S Prestige Consultants LLP prepares electronic Annexure H declarations via FBR's FASTER system, enabling verified exporters to receive State Bank of Pakistan payment advice directly into corporate bank accounts within 72 hours of return filing.
+          </p>
+        </div>
+        <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="btn-roster-pill" style="align-self: center;">File Sales Tax Refund</a>
+      </div>
+
     </div>
 
     <!-- Interactive Entity Selection Comparison Table (Virtual Accountants Benchmark) -->
@@ -447,6 +594,108 @@ get_header(); ?>
             <div class="tech-card-badge">PSW &bull; WeBOC Customs</div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Executive Regulatory Insights & Knowledge Hub (Withum & URCA Benchmark) -->
+    <div class="frosted-card" id="service-insights" style="padding: clamp(24px, 4vw, 44px); border-radius: 28px; margin-bottom: 56px; background: rgba(255, 255, 255, 0.95);">
+      <div style="text-align: center;">
+        <span class="section-eyebrow">Executive Intelligence</span>
+        <h2 style="font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: #0F172A; margin-bottom: 12px;">
+          Regulatory Advisory Insights &amp; Market Directives
+        </h2>
+        <p style="font-size: 14.5px; color: #64748B; max-width: 720px; margin: 0 auto;">
+          Authoritative intelligence briefs authored by our Senior Chartered Accountants to help corporate leaders eliminate regulatory and statutory ambiguity.
+        </p>
+
+        <div class="insight-grid">
+          
+          <!-- Insight 1: Finance Act 2024-25 -->
+          <article class="insight-card">
+            <div class="insight-card-top">
+              <div class="insight-meta">
+                <span class="insight-badge badge-tax">Taxation &bull; FBR</span>
+                <span class="insight-date">Finance Act 2024–25</span>
+              </div>
+              <h3 class="insight-title">Corporate Tax Slabs, Advance Tax (Sec 147) &amp; Super Tax Directives</h3>
+              <p class="insight-desc">
+                Critical compliance analysis on Section 4C Super Tax brackets, revised corporate withholding rates, and quarterly advance tax forecasting to prevent penalty notices under Section 205.
+              </p>
+            </div>
+            <div class="insight-card-footer">
+              <span style="font-size: 12px; color: #64748B;">Turnaround: Priority Review</span>
+              <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="insight-link">
+                <span>Request Briefing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Insight 2: Section 7E Exemption -->
+          <article class="insight-card">
+            <div class="insight-card-top">
+              <div class="insight-meta">
+                <span class="insight-badge badge-overseas">Expat Wealth &bull; Real Estate</span>
+                <span class="insight-date">Property Clearance</span>
+              </div>
+              <h3 class="insight-title">Section 7E Deemed Income: Exemption Certificates for Overseas Owners</h3>
+              <p class="insight-desc">
+                Comprehensive legal roadmap for Non-Resident Pakistanis (NRPs) and local owners to secure Commissioner exemption certificates, CPR challan generation, and avoid property sale blocks.
+              </p>
+            </div>
+            <div class="insight-card-footer">
+              <span style="font-size: 12px; color: #64748B;">Turnaround: 48 Hours</span>
+              <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="insight-link">
+                <span>Request Briefing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Insight 3: Foreign Investment Roadmap -->
+          <article class="insight-card">
+            <div class="insight-card-top">
+              <div class="insight-meta">
+                <span class="insight-badge badge-intl">FDI &bull; Cross-Border</span>
+                <span class="insight-date">International Desk</span>
+              </div>
+              <h3 class="insight-title">Foreign Entry in Pakistan: Branch Office vs. Liaison vs. 100% Subsidiary</h3>
+              <p class="insight-desc">
+                Detailed comparison of Board of Investment (BOI) approvals, Ministry of Interior security clearances, and State Bank of Pakistan Foreign Exchange Manual profit repatriation frameworks.
+              </p>
+            </div>
+            <div class="insight-card-footer">
+              <span style="font-size: 12px; color: #64748B;">Turnaround: Dedicated Escort</span>
+              <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="insight-link">
+                <span>Request Briefing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Insight 4: Section 100C NPO -->
+          <article class="insight-card">
+            <div class="insight-card-top">
+              <div class="insight-meta">
+                <span class="insight-badge badge-npo">Non-Profit &bull; PFM</span>
+                <span class="insight-date">Donor Governance</span>
+              </div>
+              <h3 class="insight-title">Section 100C Tax Exemption &amp; EAD Foreign Funding Compliance</h3>
+              <p class="insight-desc">
+                Regulatory governance for non-profit organizations, trusts, and donor programs (USAID, UN, AKDN, PPAF) covering FBR 100C certification renewals and Economic Affairs Division approvals.
+              </p>
+            </div>
+            <div class="insight-card-footer">
+              <span style="font-size: 12px; color: #64748B;">Turnaround: Partner Escort</span>
+              <a href="<?php echo esc_url(home_url('/#consultation')); ?>" class="insight-link">
+                <span>Request Briefing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
       </div>
     </div>
 

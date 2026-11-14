@@ -345,6 +345,52 @@ get_header(); ?>
                     <a href="<?php echo esc_url(home_url('/services/#service-npo')); ?>" class="btn-roster-pill">View details</a>
                   </td>
                 </tr>
+
+                <tr data-category="tab-secp" data-keywords="trade commercial psw weboc customs chamber import export ftn license international border">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar" style="background: linear-gradient(135deg, #0284C7, #38BDF8); color: #fff;">TF</div>
+                      <div>
+                        <strong>Trade Facilitation &amp; WeBOC</strong>
+                        <span class="roster-lead-sub">Cross-Border Commercial Desk</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-trade">PSW &bull; WeBOC Agent</span></td>
+                  <td>Customs User ID &amp; Chamber of Commerce</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Direct Chamber Escort
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="<?php echo esc_url(home_url('/services/#service-trade')); ?>" class="btn-roster-pill">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-accounting" data-keywords="eor employer of record payroll hr eobi pessi provident gratuity social security workforce">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar" style="background: linear-gradient(135deg, #059669, #34D399); color: #fff;">ER</div>
+                      <div>
+                        <strong>Employer of Record (EoR) &amp; HR</strong>
+                        <span class="roster-lead-sub">Workforce Compliance Wing</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-eor">EOBI &bull; PESSI Compliant</span></td>
+                  <td>Payroll Outsourcing &amp; Statutory Benefits</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Instant Deployment
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="<?php echo esc_url(home_url('/services/#service-eor')); ?>" class="btn-roster-pill">View details</a>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -946,6 +992,112 @@ get_header(); ?>
 
 
   <!-- =========================================================================
+       6B. REGULATORY INSIGHTS & KNOWLEDGE HUB (Withum & URCA Benchmark)
+       ========================================================================= -->
+  <section class="section" id="insights" style="background: #F8FAFC;">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Executive Intelligence</span>
+        <h2 class="section-heading">Regulatory Advisory Insights &amp; Market Briefs</h2>
+        <p class="section-subtext">
+          Strategic analysis and compliance directives authored by our Senior Chartered Accountants to help corporate leaders eliminate uncertainty.
+        </p>
+      </div>
+
+      <div class="insight-grid">
+        
+        <!-- Insight 1: Finance Act 2024-25 -->
+        <article class="insight-card">
+          <div class="insight-card-top">
+            <div class="insight-meta">
+              <span class="insight-badge badge-tax">Taxation &bull; FBR</span>
+              <span class="insight-date">Finance Act 2024–25</span>
+            </div>
+            <h3 class="insight-title">Corporate Tax Slabs, Advance Tax (Sec 147) &amp; Super Tax Directives</h3>
+            <p class="insight-desc">
+              Critical compliance analysis on Section 4C Super Tax brackets, revised corporate withholding rates, and quarterly advance tax forecasting to prevent penalty notices under Section 205.
+            </p>
+          </div>
+          <div class="insight-card-footer">
+            <span style="font-size: 12px; color: #64748B;">Reading Time: 4 Mins</span>
+            <a href="<?php echo esc_url(home_url('/services/#service-insights')); ?>" class="insight-link">
+              <span>Read Advisory Brief</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Insight 2: Section 7E Exemption -->
+        <article class="insight-card">
+          <div class="insight-card-top">
+            <div class="insight-meta">
+              <span class="insight-badge badge-overseas">Expat Wealth &bull; Real Estate</span>
+              <span class="insight-date">Property Clearance</span>
+            </div>
+            <h3 class="insight-title">Section 7E Deemed Income: Exemption Certificates for Overseas Owners</h3>
+            <p class="insight-desc">
+              Comprehensive legal roadmap for Non-Resident Pakistanis (NRPs) and local owners to secure Commissioner exemption certificates, CPR challan generation, and avoid property sale blocks.
+            </p>
+          </div>
+          <div class="insight-card-footer">
+            <span style="font-size: 12px; color: #64748B;">Reading Time: 5 Mins</span>
+            <a href="<?php echo esc_url(home_url('/services/#service-insights')); ?>" class="insight-link">
+              <span>Read Advisory Brief</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Insight 3: Foreign Investment Roadmap -->
+        <article class="insight-card">
+          <div class="insight-card-top">
+            <div class="insight-meta">
+              <span class="insight-badge badge-intl">FDI &bull; Cross-Border</span>
+              <span class="insight-date">International Desk</span>
+            </div>
+            <h3 class="insight-title">Foreign Entry in Pakistan: Branch Office vs. Liaison vs. 100% Subsidiary</h3>
+            <p class="insight-desc">
+              Detailed comparison of Board of Investment (BOI) approvals, Ministry of Interior security clearances, and State Bank of Pakistan Foreign Exchange Manual profit repatriation frameworks.
+            </p>
+          </div>
+          <div class="insight-card-footer">
+            <span style="font-size: 12px; color: #64748B;">Reading Time: 6 Mins</span>
+            <a href="<?php echo esc_url(home_url('/services/#service-insights')); ?>" class="insight-link">
+              <span>Read Advisory Brief</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Insight 4: Section 100C NPO -->
+        <article class="insight-card">
+          <div class="insight-card-top">
+            <div class="insight-meta">
+              <span class="insight-badge badge-npo">Non-Profit &bull; PFM</span>
+              <span class="insight-date">Donor Governance</span>
+            </div>
+            <h3 class="insight-title">Section 100C Tax Exemption &amp; EAD Foreign Funding Compliance</h3>
+            <p class="insight-desc">
+              Regulatory governance for non-profit organizations, trusts, and donor programs (USAID, UN, AKDN, PPAF) covering FBR 100C certification renewals and Economic Affairs Division approvals.
+            </p>
+          </div>
+          <div class="insight-card-footer">
+            <span style="font-size: 12px; color: #64748B;">Reading Time: 5 Mins</span>
+            <a href="<?php echo esc_url(home_url('/services/#service-insights')); ?>" class="insight-link">
+              <span>Read Advisory Brief</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
        7. CONSULTATION BOOKING & INTAKE SECTION
        ========================================================================= -->
   <section class="section" id="consultation" style="background: linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);">
@@ -997,10 +1149,14 @@ get_header(); ?>
               <select name="service_type" class="calc-input-field" required>
                 <option value="taxation">FBR Income Tax &amp; Sales Tax Compliance</option>
                 <option value="secp">SECP Company Registration (Pvt Ltd / SMC / LLP)</option>
+                <option value="international">Foreign Investor Desk &amp; BOI Support</option>
+                <option value="overseas">Overseas Pakistanis Desk &amp; Section 7E Tax</option>
                 <option value="bookkeeping">Cloud Accounting &amp; Bookkeeping (Xero / QBO)</option>
                 <option value="audit">Statutory Audit, Internal Audit &amp; Controls</option>
+                <option value="npo">NPO, Trusts &amp; Donor Grant Audits (100C / EAD)</option>
                 <option value="cfo_erp">Virtual CFO &amp; SAP/Oracle ERP Transformation</option>
-                <option value="international">Foreign Investor Desk &amp; BOI Support</option>
+                <option value="trade">Trade Facilitation, PSW &amp; WeBOC Customs</option>
+                <option value="eor">Employer of Record (EoR) &amp; Payroll Outsourcing</option>
               </select>
             </div>
           </div>

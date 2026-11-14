@@ -4,7 +4,7 @@ Theme URI: https://ssprestigeconsultants.com
 Author: SS Prestige Consultants LLP
 Author URI: https://ssprestigeconsultants.com
 Description: High-converting, bespoke corporate theme for S&S PRESTIGE CONSULTANTS LLP.
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v2 or later
 Text Domain: ssprestige
 */
@@ -2162,4 +2162,143 @@ img, video {
   font-size: 11px;
   color: #64748B;
   font-weight: 600;
+}
+
+/* Badges for EoR & Trade */
+.badge-eor {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+/* Sales Tax Jurisdictional Matrix Table */
+.salestax-matrix-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13.5px;
+}
+.salestax-matrix-table th {
+  background: #0F172A;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.salestax-matrix-table th:first-child {
+  border-top-left-radius: 16px;
+}
+.salestax-matrix-table th:last-child {
+  border-top-right-radius: 16px;
+}
+.salestax-matrix-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #F1F5F9;
+  color: #334155;
+  vertical-align: middle;
+}
+.salestax-matrix-table tr:last-child td {
+  border-bottom: none;
+}
+.salestax-matrix-table tr:hover td {
+  background: rgba(248, 250, 252, 0.85);
+}
+.tax-authority-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 12px;
+}
+.auth-fbr { background: rgba(26, 107, 255, 0.1); color: #1A6BFF; }
+.auth-pra { background: rgba(16, 185, 129, 0.1); color: #059669; }
+.auth-srb { background: rgba(217, 119, 6, 0.1); color: #D97706; }
+.auth-kpra { background: rgba(147, 51, 234, 0.1); color: #7C3AED; }
+.auth-bra { background: rgba(239, 68, 68, 0.1); color: #DC2626; }
+.auth-gb { background: rgba(13, 148, 136, 0.1); color: #0D9488; }
+
+/* Advisory Insights & Regulatory Hub (Withum / URCA Benchmark) */
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+.insight-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: clamp(20px, 3vw, 28px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.insight-card:hover {
+  transform: translateY(-4px);
+  border-color: #1A6BFF;
+  box-shadow: 0 16px 32px -8px rgba(26, 107, 255, 0.12);
+}
+.insight-card-top {
+  margin-bottom: 16px;
+}
+.insight-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.insight-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+.insight-date {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+.insight-title {
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.insight-desc {
+  font-size: 13.5px;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0;
+}
+.insight-card-footer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.insight-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1A6BFF;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+.insight-link:hover {
+  gap: 10px;
+  color: #0E55DB;
 }

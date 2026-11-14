@@ -55,7 +55,11 @@
             <li><a href="<?php echo esc_url(home_url('/services/#service-audit')); ?>" class="dropdown-link">Audit &amp; Assurance</a></li>
             <li><a href="<?php echo esc_url(home_url('/services/#service-cfo')); ?>" class="dropdown-link">Virtual CFO &amp; ERP Advisory</a></li>
             <li><a href="<?php echo esc_url(home_url('/services/#service-npo')); ?>" class="dropdown-link">NPO &amp; Development Sector</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-trade')); ?>" class="dropdown-link">Trade &amp; WeBOC Licensing</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-eor')); ?>" class="dropdown-link">Employer of Record (EoR) &amp; HR</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-salestax')); ?>" class="dropdown-link">Provincial Sales Tax Matrix</a></li>
             <li><a href="<?php echo esc_url(home_url('/services/#service-compare')); ?>" class="dropdown-link">Entity Selection Comparison</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-insights')); ?>" class="dropdown-link">Regulatory Insights Hub</a></li>
           </ul>
         </li>
         <li class="nav-item">
