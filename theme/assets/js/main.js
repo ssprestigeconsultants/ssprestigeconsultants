@@ -236,10 +236,36 @@ document.addEventListener('DOMContentLoaded', function () {
   // Run initial calculation
   calculatePakistanTax();
 
-  // 6. Smooth Scroll for internal anchors
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  // 6. Universal Consultation Click & Smooth Scroll Handler
+  document.addEventListener('click', function (e) {
+    const btn = e.target.closest('a[href*="#consultation"]');
+    if (!btn) return;
+
+    const consultationEl = document.getElementById('consultation');
+    if (consultationEl) {
+      // If we are on the page containing #consultation (front-page)
+      e.preventDefault();
+      const mobileNav = document.querySelector('.nav-menu-wrapper');
+      if (mobileNav && mobileNav.classList.contains('mobile-open')) {
+        mobileNav.classList.remove('mobile-open');
+      }
+      consultationEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (history.pushState) {
+        history.pushState(null, null, '#consultation');
+      }
+      const clientNameField = consultationEl.querySelector('input[name="client_name"]');
+      if (clientNameField) {
+        setTimeout(() => clientNameField.focus(), 600);
+      }
+    }
+  });
+
+  // Smooth scroll for generic internal hashes
+  document.querySelectorAll('a[href^="#"]:not([href*="#consultation"])').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      if (href === '#' || href === '') return;
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({
@@ -249,4 +275,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Smooth scroll on direct load with #consultation hash
+  if (window.location.hash === '#consultation') {
+    setTimeout(function () {
+      const section = document.getElementById('consultation');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 400);
+  }
 });

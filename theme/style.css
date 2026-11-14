@@ -4,7 +4,7 @@ Theme URI: https://ssprestigeconsultants.com
 Author: SS Prestige Consultants LLP
 Author URI: https://ssprestigeconsultants.com
 Description: High-converting, bespoke corporate theme for S&S PRESTIGE CONSULTANTS LLP.
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 Text Domain: ssprestige
 */
@@ -158,8 +158,7 @@ Text Domain: ssprestige
 }
 
 .floating-navbar-container {
-  width: 100%;
-  max-width: var(--container-max);
+  width: min(96%, 1440px);
   margin: 0 auto;
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
@@ -167,11 +166,11 @@ Text Domain: ssprestige
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-nav); /* Rectangle with rounded corners */
   box-shadow: var(--glass-shadow);
-  padding: clamp(6px, 1.2vw, 10px) clamp(12px, 1.8vw, 20px);
+  padding: clamp(6px, 0.9vw, 10px) clamp(10px, 1.4vw, 18px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: clamp(8px, 1.2vw, 16px);
+  gap: clamp(6px, 1vw, 14px);
   transition: all var(--transition-normal);
   position: relative;
   box-sizing: border-box;
@@ -237,7 +236,7 @@ Text Domain: ssprestige
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: clamp(2px, 0.5vw, 6px);
+  gap: clamp(2px, 0.4vw, 6px);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -250,16 +249,14 @@ Text Domain: ssprestige
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 6px clamp(6px, 0.8vw, 11px);
-  font-size: clamp(12.5px, 1.05vw, 13.5px);
+  gap: 4px;
+  padding: 6px clamp(4px, 0.55vw, 10px);
+  font-size: clamp(12px, 0.82vw, 13.5px);
   font-weight: var(--font-weight-semibold);
   color: var(--color-slate);
   text-decoration: none;
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
-  white-space: nowrap;
-}
   white-space: nowrap;
 }
 
@@ -402,8 +399,45 @@ Text Domain: ssprestige
   color: var(--color-primary);
 }
 
-/* Responsive Mobile Navigation Drawer */
-@media (max-width: 991px) {
+/* Responsive Desktop, Laptop & Mobile Navigation */
+
+/* On laptop/desktop screens under 1440px, hide the bulky phone button to keep capsule completely inside */
+@media (max-width: 1440px) {
+  .btn-nav-outline {
+    display: none !important;
+  }
+}
+
+/* On medium desktop screens under 1240px, auto-adjust menu spacing and hide secondary tagline */
+@media (max-width: 1240px) {
+  .brand-tagline {
+    display: none !important;
+  }
+  .nav-menu {
+    gap: clamp(1px, 0.3vw, 4px);
+  }
+  .nav-link {
+    padding: 5px clamp(3px, 0.4vw, 7px);
+    font-size: 12px;
+  }
+  .btn-primary-glow {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet & Mobile Navigation Breakpoint (below 1060px) */
+@media (max-width: 1060px) {
+  .mobile-nav-toggle {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 6px 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
   .nav-menu-wrapper {
     position: absolute;
     top: calc(100% + 12px);
@@ -464,30 +498,12 @@ Text Domain: ssprestige
     font-size: 13.5px;
   }
 
-/* On desktop screens under 1320px, hide the bulky phone button to keep capsule completely inside */
-@media (max-width: 1320px) {
-  .btn-nav-outline {
-    display: none;
-  }
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: flex;
-    width: 36px;
-    height: 36px;
-    padding: 6px 8px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
   .nav-actions {
     gap: 8px;
   }
 
   .nav-actions .btn-nav-outline {
-    display: none;
+    display: none !important;
   }
 
   .brand-tagline {
@@ -2301,4 +2317,15 @@ img, video {
 .insight-link:hover {
   gap: 10px;
   color: #0E55DB;
+}
+
+/* ==========================================================================
+   Fixed Header Clearance & Smooth Scroll Anchors
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+#consultation, #services, #offices, #tax-calculator, #trust, #leadership, #roadmap, #insights, #statutory-portals {
+  scroll-margin-top: 95px;
 }
