@@ -127,8 +127,23 @@
   </div>
 </footer>
 
+<?php
+$wa_text = 'Hello SS Prestige Consultants, I would like to consult with a partner.';
+if (is_page('tax-calculator')) {
+    $wa_text = 'Hello Sunil Babar, I calculated my income tax on ssprestigeconsultants.com and would like assistance filing my return with FBR.';
+} elseif (is_page('services')) {
+    $wa_text = 'Hello SS Prestige Consultants, I would like to inquire about your corporate and tax advisory services.';
+} elseif (is_page('client-assurance')) {
+    $wa_text = 'Hello SS Prestige Consultants, I would like to discuss confidential engagement terms and mutual NDA.';
+} elseif (is_page('about')) {
+    $wa_text = 'Hello Sunil Babar, I would like to schedule an advisory consultation regarding financial transformation.';
+} elseif (is_page('contact')) {
+    $wa_text = 'Hello SS Prestige Consultants, I would like to schedule an appointment at your Islamabad/Gilgit chamber.';
+}
+$wa_url = 'https://wa.me/923464439391?text=' . urlencode($wa_text);
+?>
 <!-- Persistent Floating WhatsApp Quick-Help Pill -->
-<a href="https://wa.me/923464439391?text=Hello%20SS%20Prestige%20Consultants%2C%20I%20would%20like%20to%20consult%20with%20a%20partner." 
+<a href="<?php echo esc_url($wa_url); ?>" 
    class="floating-whatsapp-pill" 
    target="_blank" 
    rel="noopener" 

@@ -10,6 +10,69 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="profile" href="https://gmpg.org/xfn/11">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AccountingService",
+        "@id": "https://ssprestigeconsultants.com/#organization",
+        "name": "S&S PRESTIGE CONSULTANTS LLP",
+        "alternateName": "S&S Prestige Consultants",
+        "legalName": "S&S PRESTIGE CONSULTANTS LLP",
+        "url": "https://ssprestigeconsultants.com/",
+        "logo": "https://ssprestigeconsultants.com/wp-content/themes/ssprestige-theme/assets/images/logo.png",
+        "email": "info@ssprestigeconsultants.com",
+        "telephone": "+923464439391",
+        "taxID": "I107949-3",
+        "identifier": "0316515",
+        "description": "Licensed Chartered Accountancy & corporate consultancy LLP providing FBR income and sales tax compliance, SECP company registration, International Desk FDI, Overseas Pakistanis Section 7E clearances, audit, and ERP transformation in Pakistan.",
+        "foundingDate": "2025-11-24",
+        "founder": {
+          "@type": "Person",
+          "name": "Sunil Babar",
+          "jobTitle": "Managing Partner & Senior Transformation Advisor",
+          "alumniOf": "Institute of Chartered Accountants of Pakistan (ICAP)"
+        },
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "2nd Floor, Farooq Plaza, Kurri Road, Jinnah Avenue",
+            "addressLocality": "Islamabad",
+            "addressRegion": "ICT",
+            "addressCountry": "PK"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Hunza Electronics, Naseem Shopping Center, Cinema Bazaar, Airport Road",
+            "addressLocality": "Gilgit",
+            "addressRegion": "Gilgit-Baltistan",
+            "addressCountry": "PK"
+          }
+        ],
+        "areaServed": [
+          { "@type": "Country", "name": "Pakistan" },
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "United Arab Emirates" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Financial & Advisory Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Taxation & FBR IRIS Compliance" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SECP Company & LLP Registration" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "International Desk & Foreign Direct Investment (FDI)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Overseas Pakistanis Section 7E Property Tax Advisory" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Statutory & Donor Grant Audits" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Virtual CFO & Enterprise ERP Architecture" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pakistan Single Window (PSW) & WeBOC Customs Licensing" } }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
