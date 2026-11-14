@@ -741,6 +741,188 @@ get_header(); ?>
       </div>
     </div>
 
+    <!-- ========================================== -->
+    <!-- Official Statutory & Regulatory Portals Directory -->
+    <!-- ========================================== -->
+    <div id="statutory-portals" style="margin-bottom: clamp(48px, 6vw, 72px);">
+      <div style="text-align: center; max-width: 820px; margin: 0 auto 36px;">
+        <span class="hero-badge" style="margin-bottom: 12px; display: inline-flex;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          Direct Government Filing Channels
+        </span>
+        <h2 style="font-size: clamp(24px, 3.2vw, 36px); font-weight: 800; color: #0F172A; letter-spacing: -0.02em; margin-bottom: 12px;">
+          Official Statutory &amp; Regulatory Portals
+        </h2>
+        <p style="font-size: clamp(14px, 1.8vw, 16px); color: #64748B; line-height: 1.6;">
+          Quick-access directory of Pakistan's federal and provincial regulatory portals, online tax filing systems, and corporate compliance registries — curated for corporate executives, business owners, and expatriates.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        
+        <!-- FBR Federal Board of Revenue -->
+        <div class="glass-card" style="padding: 28px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+              <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 10px; background: #EFF6FF; color: #1A6BFF; border-radius: 9999px;">Federal Taxation</span>
+              <span style="font-size: 12px; color: #10B981; font-weight: 700; display: flex; align-items: center; gap: 4px;">
+                <span style="width: 7px; height: 7px; background: #10B981; border-radius: 50%; display: inline-block;"></span> Active
+              </span>
+            </div>
+            <h3 style="font-size: 18px; font-weight: 800; color: #0F172A; margin-bottom: 8px;">
+              Federal Board of Revenue (FBR)
+            </h3>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.6; margin-bottom: 16px;">
+              Official federal portal for electronic tax filing, NTN registration, income tax return submission, and active taxpayer status.
+            </p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; font-size: 13px; color: #334155; line-height: 2;">
+              <li>• <strong>IRIS 2.0 Portal:</strong> Annual return &amp; monthly sales tax</li>
+              <li>• <strong>Active Taxpayer List (ATL):</strong> Instant online verification</li>
+              <li>• <strong>e-Payment System:</strong> Tax challan &amp; PSID generation</li>
+              <li>• <strong>Maloomat:</strong> Withholding data &amp; asset profiling</li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener" class="btn-primary-glow" style="justify-content: center; padding: 10px 16px; font-size: 13px;">
+              <span>Open FBR IRIS 2.0</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://e.fbr.gov.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 14px; font-size: 12px; color: #475569;">
+              <span>FBR e-Payment &amp; ATL Check</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- SECP Securities & Exchange Commission -->
+        <div class="glass-card" style="padding: 28px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+              <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 10px; background: #ECFDF5; color: #059669; border-radius: 9999px;">Corporate Registry</span>
+              <span style="font-size: 12px; color: #10B981; font-weight: 700; display: flex; align-items: center; gap: 4px;">
+                <span style="width: 7px; height: 7px; background: #10B981; border-radius: 50%; display: inline-block;"></span> Active
+              </span>
+            </div>
+            <h3 style="font-size: 18px; font-weight: 800; color: #0F172A; margin-bottom: 8px;">
+              SECP eZfile &amp; Corporate Portal
+            </h3>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.6; margin-bottom: 16px;">
+              Apex regulatory portal for corporate registration under Companies Act 2017 and LLP Act 2017.
+            </p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; font-size: 13px; color: #334155; line-height: 2;">
+              <li>• <strong>eZfile Services:</strong> Online incorporation &amp; annual returns</li>
+              <li>• <strong>Company Name Search:</strong> Instant name availability search</li>
+              <li>• <strong>Statutory Returns:</strong> Form 29, Form A, and LLP Form 3/4</li>
+              <li>• <strong>Certified Copies:</strong> Digital CTC issuance</li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="https://eservices.secp.gov.pk/" target="_blank" rel="noopener" class="btn-primary-glow" style="justify-content: center; padding: 10px 16px; font-size: 13px; background: linear-gradient(135deg, #059669 0%, #10B981 100%);">
+              <span>Open SECP eZfile Portal</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://www.secp.gov.pk/company-name-search/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 14px; font-size: 12px; color: #475569;">
+              <span>Search Available Company Names</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Provincial Revenue Authorities (PRA, SRB, KPRA, BRA) -->
+        <div class="glass-card" style="padding: 28px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+              <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 10px; background: #FFFBEB; color: #B45309; border-radius: 9999px;">Provincial Sales Tax</span>
+              <span style="font-size: 12px; color: #10B981; font-weight: 700; display: flex; align-items: center; gap: 4px;">
+                <span style="width: 7px; height: 7px; background: #10B981; border-radius: 50%; display: inline-block;"></span> Active
+              </span>
+            </div>
+            <h3 style="font-size: 18px; font-weight: 800; color: #0F172A; margin-bottom: 8px;">
+              Provincial Sales Tax Boards
+            </h3>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.6; margin-bottom: 16px;">
+              Provincial e-filing systems for Sales Tax on Services (STS) across Punjab, Sindh, KP, and Balochistan.
+            </p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; font-size: 13px; color: #334155; line-height: 2;">
+              <li>• <strong>PRA (Punjab):</strong> Punjab Revenue Authority e-portal</li>
+              <li>• <strong>SRB (Sindh):</strong> Sindh Revenue Board automated portal</li>
+              <li>• <strong>KPRA (KP):</strong> Khyber Pakhtunkhwa Revenue Authority</li>
+              <li>• <strong>BRA (Balochistan):</strong> Balochistan Revenue Authority</li>
+            </ul>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <a href="https://pra.punjab.gov.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>PRA (Punjab)</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://srb.gos.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>SRB (Sindh)</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://kpra.gov.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>KPRA (KP)</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://bra.gob.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>BRA (Balochistan)</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Trade, Customs & Central Banking -->
+        <div class="glass-card" style="padding: 28px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+              <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 10px; background: #F5F3FF; color: #6D28D9; border-radius: 9999px;">Trade &amp; Central Bank</span>
+              <span style="font-size: 12px; color: #10B981; font-weight: 700; display: flex; align-items: center; gap: 4px;">
+                <span style="width: 7px; height: 7px; background: #10B981; border-radius: 50%; display: inline-block;"></span> Active
+              </span>
+            </div>
+            <h3 style="font-size: 18px; font-weight: 800; color: #0F172A; margin-bottom: 8px;">
+              Customs, PSW &amp; State Bank
+            </h3>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.6; margin-bottom: 16px;">
+              Regulatory portals for import/export clearance, cross-border payments, and foreign exchange compliance.
+            </p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; font-size: 13px; color: #334155; line-height: 2;">
+              <li>• <strong>PSW Portal:</strong> Pakistan Single Window unified trade portal</li>
+              <li>• <strong>WeBOC Customs:</strong> Web-Based One Customs GD filing</li>
+              <li>• <strong>State Bank of Pakistan:</strong> FX Manual &amp; FDI regulations</li>
+              <li>• <strong>PSEB Registration:</strong> 0.25% IT export regime portal</li>
+            </ul>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <a href="https://www.psw.gov.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>PSW Portal</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://www.weboc.gov.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>WeBOC Customs</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://www.sbp.org.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>State Bank (SBP)</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://pseb.org.pk/" target="_blank" rel="noopener" class="btn-outline-glass" style="justify-content: center; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #0F172A;">
+              <span>PSEB (IT Firm)</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Professional Disclaimer Note -->
+      <div style="margin-top: 24px; padding: 16px 20px; background: rgba(241, 245, 249, 0.7); border: 1px solid #CBD5E1; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <span style="font-size: 12px; color: #475569; line-height: 1.5;">
+          <strong>Executive Compliance Notice:</strong> These links connect directly to the official government and statutory systems of the Islamic Republic of Pakistan. S&amp;S Prestige Consultants LLP assists clients with filing, digital representation, dispute resolution, and audit documentation across all these portals under ICAP professional standards.
+        </span>
+      </div>
+    </div>
+
     <!-- Bottom CTA Bar -->
     <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 24px; padding: clamp(24px, 4vw, 40px); color: #FFFFFF; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
       <div>

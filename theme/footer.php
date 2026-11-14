@@ -42,6 +42,28 @@
   </div>
 </section>
 
+<!-- Official Statutory Portals Quick Navigation Strip -->
+<div class="statutory-portals-strip" style="background: #0B1120; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0;">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12px;">
+    <div style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 700;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1A6BFF" stroke-width="2.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      <span style="color: #E2E8F0; text-transform: uppercase; letter-spacing: 0.05em; font-size: 11px;">Statutory Portals:</span>
+    </div>
+    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener" style="color: #38BDF8; text-decoration: none; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); border-radius: 6px; font-weight: 600;">FBR IRIS 2.0</a>
+      <a href="https://e.fbr.gov.pk/" target="_blank" rel="noopener" style="color: #38BDF8; text-decoration: none; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); border-radius: 6px; font-weight: 600;">Active Taxpayer (ATL)</a>
+      <a href="https://eservices.secp.gov.pk/" target="_blank" rel="noopener" style="color: #34D399; text-decoration: none; padding: 4px 10px; background: rgba(52, 211, 153, 0.1); border-radius: 6px; font-weight: 600;">SECP eZfile</a>
+      <a href="https://pra.punjab.gov.pk/" target="_blank" rel="noopener" style="color: #FBBF24; text-decoration: none; padding: 4px 10px; background: rgba(251, 191, 36, 0.1); border-radius: 6px; font-weight: 600;">PRA Punjab</a>
+      <a href="https://srb.gos.pk/" target="_blank" rel="noopener" style="color: #FBBF24; text-decoration: none; padding: 4px 10px; background: rgba(251, 191, 36, 0.1); border-radius: 6px; font-weight: 600;">SRB Sindh</a>
+      <a href="https://kpra.gov.pk/" target="_blank" rel="noopener" style="color: #FBBF24; text-decoration: none; padding: 4px 10px; background: rgba(251, 191, 36, 0.1); border-radius: 6px; font-weight: 600;">KPRA</a>
+      <a href="https://www.psw.gov.pk/" target="_blank" rel="noopener" style="color: #A78BFA; text-decoration: none; padding: 4px 10px; background: rgba(167, 139, 250, 0.1); border-radius: 6px; font-weight: 600;">PSW Single Window</a>
+      <a href="https://www.weboc.gov.pk/" target="_blank" rel="noopener" style="color: #A78BFA; text-decoration: none; padding: 4px 10px; background: rgba(167, 139, 250, 0.1); border-radius: 6px; font-weight: 600;">WeBOC</a>
+      <a href="https://www.sbp.org.pk/" target="_blank" rel="noopener" style="color: #A78BFA; text-decoration: none; padding: 4px 10px; background: rgba(167, 139, 250, 0.1); border-radius: 6px; font-weight: 600;">State Bank (SBP)</a>
+      <a href="<?php echo esc_url(home_url('/services/#statutory-portals')); ?>" style="color: #FFFFFF; text-decoration: none; padding: 4px 10px; background: #1A6BFF; border-radius: 6px; font-weight: 700;">Directory &rarr;</a>
+    </div>
+  </div>
+</div>
+
 <!-- Main Corporate Footer -->
 <footer class="site-footer" id="offices">
   <div class="container">
@@ -69,13 +91,14 @@
       <div class="footer-col">
         <h4 class="footer-col-title">Practice Areas</h4>
         <ul class="footer-links">
-          <li><a href="#service-tax">FBR Income &amp; Sales Tax</a></li>
-          <li><a href="#service-secp">SECP Company Incorporation</a></li>
-          <li><a href="#service-accounting">Cloud Accounting &amp; Bookkeeping</a></li>
-          <li><a href="#service-audit">Statutory &amp; Internal Audit</a></li>
-          <li><a href="#service-cfo">Virtual CFO &amp; Strategic Advisory</a></li>
-          <li><a href="#service-erp">SAP / Oracle ERP Transformations</a></li>
-          <li><a href="#service-foreign">BOI &amp; Foreign Investor Desk</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-tax')); ?>">FBR Income &amp; Sales Tax</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-secp')); ?>">SECP Company Incorporation</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-international')); ?>">International Desk &amp; FDI</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-overseas')); ?>">Overseas Pakistanis Section 7E</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-accounting')); ?>">Cloud Accounting &amp; BPO</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-audit')); ?>">Statutory &amp; Internal Audit</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-cfo')); ?>">Virtual CFO &amp; SAP ERP Advisory</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-trade')); ?>">Trade &amp; WeBOC Customs</a></li>
         </ul>
       </div>
 
@@ -83,12 +106,14 @@
       <div class="footer-col">
         <h4 class="footer-col-title">Client Tools &amp; Trust</h4>
         <ul class="footer-links">
-          <li><a href="#tax-calculator">Pakistan Tax &amp; Salary Calculator</a></li>
-          <li><a href="#trust">Client Confidentiality &amp; NDA Protocol</a></li>
-          <li><a href="#roadmap">3-Step Engagement Workflow</a></li>
-          <li><a href="#leadership">Managing Partner Track Record</a></li>
-          <li><a href="#consultation">Book Partner Consultation</a></li>
-          <li><a href="https://wa.me/923464439391" target="_blank" rel="noopener">WhatsApp Quick Response</a></li>
+          <li><a href="<?php echo esc_url(home_url('/tax-calculator/')); ?>">Pakistan Income Tax Calculator</a></li>
+          <li><a href="<?php echo esc_url(home_url('/client-assurance/')); ?>">Client Assurance &amp; NDA Protocol</a></li>
+          <li><a href="<?php echo esc_url(home_url('/about/')); ?>">Managing Partner Track Record</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-compare')); ?>">Entity Selection Guide</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-salestax')); ?>">Provincial Sales Tax Matrix</a></li>
+          <li><a href="<?php echo esc_url(home_url('/services/#service-insights')); ?>">Regulatory Insights Hub</a></li>
+          <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact Dual Regional Chambers</a></li>
+          <li><a href="<?php echo esc_url(home_url('/#consultation')); ?>">Schedule Confidential Consultation</a></li>
         </ul>
       </div>
 

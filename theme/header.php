@@ -9,6 +9,46 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="JrkHuO-Yhg9E5JZ-9yHXWmNHrcjGv-tOD5H0qp6Cmr8">
+  <link rel="canonical" href="<?php echo esc_url(get_permalink()); ?>">
+  
+  <?php
+  $page_desc = "S&S PRESTIGE CONSULTANTS LLP — Premier Chartered Accountancy & corporate advisory firm in Pakistan. FBR tax compliance, SECP company registration, International Desk FDI, Overseas Pakistanis Section 7E, and Virtual CFO.";
+  if (is_page('services')) {
+      $page_desc = "Explore our 11 corporate practice areas: FBR tax compliance, SECP registration, International Desk FDI, Overseas Pakistanis Section 7E, Cloud Bookkeeping, Audit, and ERP transformation.";
+  } elseif (is_page('tax-calculator')) {
+      $page_desc = "Interactive Pakistan Income Tax Calculator for Salaried, Business AOP, and IT Freelancers (0.25% PSEB rate) based on official FBR Finance Act tax slabs.";
+  } elseif (is_page('client-assurance')) {
+      $page_desc = "Client Assurance & The 4 Pillars of Financial Trust: Pre-engagement NDA, Licensed CA Technical Direction, Fixed-Scope Pricing, and Partner Helpline.";
+  } elseif (is_page('about')) {
+      $page_desc = "About S&S PRESTIGE CONSULTANTS LLP. Managing Partner Sunil Babar, CA-CAF (ICAP) with 18+ years corporate leadership, 700+ audits, 500+ tax filings, and ERP migrations.";
+  } elseif (is_page('contact')) {
+      $page_desc = "Contact S&S PRESTIGE CONSULTANTS LLP. Dual regional chambers in Islamabad Head Office and Gilgit Regional Office. Direct partner consultation.";
+  }
+  ?>
+  <meta name="description" content="<?php echo esc_attr($page_desc); ?>">
+  <meta name="keywords" content="tax consultant Islamabad, SECP company registration, chartered accountants Pakistan, Sunil Babar CA, Section 7E property tax exemption, FBR income tax calculator, international desk Pakistan, virtual CFO ERP, Gilgit chartered accountant">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- GEO Meta Tags (Islamabad & Gilgit) -->
+  <meta name="geo.region" content="PK-IS">
+  <meta name="geo.placename" content="Islamabad, Pakistan">
+  <meta name="geo.position" content="33.6844;73.0479">
+  <meta name="ICBM" content="33.6844, 73.0479">
+
+  <!-- OpenGraph Social Tags -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?php wp_title('|', true, 'right'); bloginfo('name'); ?>">
+  <meta property="og:description" content="<?php echo esc_attr($page_desc); ?>">
+  <meta property="og:url" content="<?php echo esc_url(get_permalink()); ?>">
+  <meta property="og:site_name" content="S&amp;S PRESTIGE CONSULTANTS LLP">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php wp_title('|', true, 'right'); bloginfo('name'); ?>">
+  <meta name="twitter:description" content="<?php echo esc_attr($page_desc); ?>">
+
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <script type="application/ld+json">
   {
@@ -28,6 +68,17 @@
         "identifier": "0316515",
         "description": "Licensed Chartered Accountancy & corporate consultancy LLP providing FBR income and sales tax compliance, SECP company registration, International Desk FDI, Overseas Pakistanis Section 7E clearances, audit, and ERP transformation in Pakistan.",
         "foundingDate": "2025-11-24",
+        "knowsAbout": [
+          "Federal Board of Revenue (FBR)",
+          "Securities and Exchange Commission of Pakistan (SECP)",
+          "Section 7E Deemed Income Property Tax",
+          "International Financial Reporting Standards (IFRS)",
+          "State Bank of Pakistan Foreign Exchange Manual",
+          "Transfer Pricing (OECD / CbCR)",
+          "SAP S/4HANA & Oracle Cloud ERP",
+          "Pakistan Single Window (PSW) & WeBOC",
+          "Section 100C Non-Profit Tax Exemptions"
+        ],
         "founder": {
           "@type": "Person",
           "name": "Sunil Babar",
@@ -40,14 +91,24 @@
             "streetAddress": "2nd Floor, Farooq Plaza, Kurri Road, Jinnah Avenue",
             "addressLocality": "Islamabad",
             "addressRegion": "ICT",
-            "addressCountry": "PK"
+            "addressCountry": "PK",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "33.6844",
+              "longitude": "73.0479"
+            }
           },
           {
             "@type": "PostalAddress",
             "streetAddress": "Hunza Electronics, Naseem Shopping Center, Cinema Bazaar, Airport Road",
             "addressLocality": "Gilgit",
             "addressRegion": "Gilgit-Baltistan",
-            "addressCountry": "PK"
+            "addressCountry": "PK",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "35.9221",
+              "longitude": "74.3087"
+            }
           }
         ],
         "areaServed": [
@@ -69,6 +130,44 @@
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pakistan Single Window (PSW) & WeBOC Customs Licensing" } }
           ]
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ssprestigeconsultants.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is required to file an annual income tax return in Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Section 114 of the Income Tax Ordinance 2001, any individual earning taxable income exceeding PKR 600,000 annually, owners of immovable property or motor vehicles above statutory limits, NTN holders, and all registered companies/LLPs are legally obligated to file an annual tax return."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 0.25% concessionary tax rate for IT freelancers and tech exporters in Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under the Income Tax Ordinance, registered IT and IT-enabled service (ITeS) exporters holding valid registration with the Pakistan Software Export Board (PSEB) benefit from a 0.25% final tax regime on inward foreign export remittances."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can Overseas Pakistanis obtain Section 7E property tax exemption certificates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non-Resident Pakistanis (NRPs) can obtain Section 7E exemption certificates through certified Chartered Accountants by submitting proof of non-resident status under Section 82 (the 183-day rule), property purchase documents, and tax filings via the FBR IRIS system without traveling to Pakistan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does SECP company registration take in Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Through SECP's digital eZfile system, S&S PRESTIGE CONSULTANTS LLP fast-tracks complete incorporation (Private Limited, SMC, or LLP) in 3 to 5 business days, including digital signatures, MOA/AOA drafting, and automatic corporate NTN issuance."
+            }
+          }
+        ]
       }
     ]
   }

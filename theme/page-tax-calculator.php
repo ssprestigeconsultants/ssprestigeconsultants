@@ -197,6 +197,56 @@ get_header(); ?>
       </div>
     </div>
 
+    <!-- Official FBR & Tax Statutory Portals Strip -->
+    <div style="margin-top: 36px; background: rgba(255, 255, 255, 0.85); border: 1px solid #E2E8F0; border-radius: 20px; padding: clamp(20px, 3vw, 32px);">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
+        <div>
+          <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #1A6BFF; background: #EFF6FF; padding: 4px 10px; border-radius: 9999px;">Official E-Portals</span>
+          <h3 style="font-size: 18px; font-weight: 800; color: #0F172A; margin-top: 6px;">
+            Statutory Portals &amp; Tax Verification
+          </h3>
+        </div>
+        <a href="<?php echo esc_url(home_url('/services/#statutory-portals')); ?>" style="font-size: 13px; font-weight: 700; color: #1A6BFF; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+          <span>View All 12 Regulatory Portals</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener" style="text-decoration: none; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease;">
+          <div>
+            <div style="font-size: 11px; font-weight: 700; color: #10B981; margin-bottom: 4px;">FBR Official</div>
+            <div style="font-size: 15px; font-weight: 800; color: #0F172A; margin-bottom: 4px;">IRIS 2.0 E-Filing &rarr;</div>
+            <p style="font-size: 12px; color: #64748B; margin: 0; line-height: 1.5;">Direct portal to submit annual income tax returns and withholding statements.</p>
+          </div>
+        </a>
+
+        <a href="https://e.fbr.gov.pk/" target="_blank" rel="noopener" style="text-decoration: none; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease;">
+          <div>
+            <div style="font-size: 11px; font-weight: 700; color: #10B981; margin-bottom: 4px;">FBR Status</div>
+            <div style="font-size: 15px; font-weight: 800; color: #0F172A; margin-bottom: 4px;">Verify Active Taxpayer &rarr;</div>
+            <p style="font-size: 12px; color: #64748B; margin: 0; line-height: 1.5;">Check whether your CNIC or NTN appears on the active taxpayer list (ATL).</p>
+          </div>
+        </a>
+
+        <a href="https://e.fbr.gov.pk/" target="_blank" rel="noopener" style="text-decoration: none; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease;">
+          <div>
+            <div style="font-size: 11px; font-weight: 700; color: #10B981; margin-bottom: 4px;">FBR Payments</div>
+            <div style="font-size: 15px; font-weight: 800; color: #0F172A; margin-bottom: 4px;">Generate PSID Challan &rarr;</div>
+            <p style="font-size: 12px; color: #64748B; margin: 0; line-height: 1.5;">Create electronic payment slip (PSID) for banking or 1BILL tax payments.</p>
+          </div>
+        </a>
+
+        <a href="<?php echo esc_url(home_url('/#consultation')); ?>" style="text-decoration: none; background: linear-gradient(135deg, #1A6BFF 0%, #004BD6 100%); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; color: #FFFFFF;">
+          <div>
+            <div style="font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.8); margin-bottom: 4px;">Expert CA Review</div>
+            <div style="font-size: 15px; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">File with S&amp;S Prestige &rarr;</div>
+            <p style="font-size: 12px; color: rgba(255,255,255,0.85); margin: 0; line-height: 1.5;">Ensure full compliance, wealth reconciliation, and zero audit notice exposure.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
   </div>
 </main>
 

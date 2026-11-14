@@ -124,7 +124,7 @@ get_header(); ?>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <h2 class="selector-title">Doctor Consultation &bull; Financial &amp; Corporate Advisory</h2>
+              <h2 class="selector-title">Executive Advisory Directory &bull; Chartered Accountancy Solutions</h2>
               <span class="selector-subtitle">Chartered Accountant oversight • Transparent fixed scopes • Direct partner helpline</span>
             </div>
           </div>
