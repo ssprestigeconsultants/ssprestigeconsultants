@@ -42,32 +42,32 @@
           <a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link">Home</a>
         </li>
         <li class="nav-item has-dropdown">
-          <a href="#services" class="nav-link">
+          <a href="<?php echo esc_url(home_url('/services/')); ?>" class="nav-link">
             Services
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="nav-dropdown">
-            <li><a href="#service-tax" class="dropdown-link">Taxation &amp; FBR Compliance</a></li>
-            <li><a href="#service-secp" class="dropdown-link">SECP Company Registration</a></li>
-            <li><a href="#service-accounting" class="dropdown-link">Cloud Bookkeeping &amp; Payroll</a></li>
-            <li><a href="#service-audit" class="dropdown-link">Audit &amp; Assurance</a></li>
-            <li><a href="#service-cfo" class="dropdown-link">Virtual CFO &amp; ERP Advisory</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-tax')); ?>" class="dropdown-link">Taxation &amp; FBR Compliance</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-secp')); ?>" class="dropdown-link">SECP Company Registration</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-accounting')); ?>" class="dropdown-link">Cloud Bookkeeping &amp; Payroll</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-audit')); ?>" class="dropdown-link">Audit &amp; Assurance</a></li>
+            <li><a href="<?php echo esc_url(home_url('/services/#service-cfo')); ?>" class="dropdown-link">Virtual CFO &amp; ERP Advisory</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#trust" class="nav-link">Client Assurance</a>
+          <a href="<?php echo esc_url(home_url('/client-assurance/')); ?>" class="nav-link">Client Assurance</a>
         </li>
         <li class="nav-item">
-          <a href="#leadership" class="nav-link">Leadership</a>
+          <a href="<?php echo esc_url(home_url('/about/')); ?>" class="nav-link">Leadership</a>
         </li>
         <li class="nav-item">
-          <a href="#tax-calculator" class="nav-link">
+          <a href="<?php echo esc_url(home_url('/tax-calculator/')); ?>" class="nav-link">
             Tax Calculator
             <span class="nav-badge-pill">Free</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#offices" class="nav-link">Offices</a>
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="nav-link">Offices</a>
         </li>
       </ul>
     </nav>

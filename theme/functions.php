@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SS_PRESTIGE_VERSION', '1.0.3');
+define('SS_PRESTIGE_VERSION', '1.0.4');
 
 function ss_prestige_setup() {
     // Add default posts and comments RSS feed links to head.
@@ -172,6 +172,16 @@ function ss_prestige_setup_pages() {
             'title'    => 'Contact & Offices (Islamabad & Gilgit)',
             'slug'     => 'contact',
             'template' => 'page-contact.php'
+        ],
+        [
+            'title'    => 'Pakistan Income Tax Calculator',
+            'slug'     => 'tax-calculator',
+            'template' => 'page-tax-calculator.php'
+        ],
+        [
+            'title'    => 'Client Assurance & The 4 Pillars of Trust',
+            'slug'     => 'client-assurance',
+            'template' => 'page-assurance.php'
         ]
     ];
 
@@ -188,6 +198,11 @@ function ss_prestige_setup_pages() {
             if ($page_id && !empty($p['template'])) {
                 update_post_meta($page_id, '_wp_page_template', $p['template']);
             }
+        } else {
+            // Ensure template is explicitly linked
+            if (!empty($p['template'])) {
+                update_post_meta($existing->ID, '_wp_page_template', $p['template']);
+            }
         }
     }
 
@@ -198,9 +213,9 @@ function ss_prestige_setup_pages() {
 }
 add_action('after_switch_theme', 'ss_prestige_setup_pages');
 add_action('admin_init', function () {
-    if (get_option('ss_prestige_pages_initialized') !== 'yes') {
+    if (get_option('ss_prestige_pages_v3_initialized') !== 'yes') {
         ss_prestige_setup_pages();
-        update_option('ss_prestige_pages_initialized', 'yes');
+        update_option('ss_prestige_pages_v3_initialized', 'yes');
     }
 });
 
