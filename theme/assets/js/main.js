@@ -24,9 +24,74 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Floating Frosted Glass Service Selector Tabs
+  // 3. Floating Interactive Toggle Slider in Hero
+  const heroSliderToggle = document.getElementById('heroSliderToggle');
+  if (heroSliderToggle) {
+    heroSliderToggle.addEventListener('click', function () {
+      this.classList.toggle('active');
+    });
+    heroSliderToggle.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.classList.toggle('active');
+      }
+    });
+  }
+
+  // 4. Floating Frosted Glass Service Selector Tabs & Quick Consultation Roster
   const tabButtons = document.querySelectorAll('.service-tab-btn');
   const tabPanes = document.querySelectorAll('.service-tab-pane');
+  const rosterRows = document.querySelectorAll('#consultationRosterTable tbody tr');
+  const searchInput = document.getElementById('consultationSearchInput');
+
+  function filterConsultationRoster(category, query) {
+    const q = (query || '').toLowerCase().trim();
+
+    rosterRows.forEach(row => {
+      const rowCat = row.getAttribute('data-category');
+      const rowKeywords = (row.getAttribute('data-keywords') || '').toLowerCase();
+      const rowText = row.textContent.toLowerCase();
+
+      const matchCat = (category === 'all' || !category || rowCat === category);
+      const matchQuery = !q || rowKeywords.includes(q) || rowText.includes(q);
+
+      if (matchCat && matchQuery) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    // Handle tab panes
+    if (q) {
+      // If user is searching, show matching panes
+      tabPanes.forEach(pane => {
+        const paneText = pane.textContent.toLowerCase();
+        if (paneText.includes(q)) {
+          pane.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+        }
+      });
+    } else if (category && category !== 'all') {
+      tabPanes.forEach(pane => {
+        if (pane.id === category) {
+          pane.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+        }
+      });
+    } else {
+      // All selected: show first pane as active default
+      tabPanes.forEach((pane, idx) => {
+        if (idx === 0) {
+          pane.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+        }
+      });
+    }
+  }
 
   tabButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -36,14 +101,29 @@ document.addEventListener('DOMContentLoaded', function () {
       tabButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
 
-      // Update pane states
-      tabPanes.forEach(pane => {
-        if (pane.id === targetId) {
-          pane.classList.add('active');
-        } else {
-          pane.classList.remove('active');
-        }
-      });
+      const currentQuery = searchInput ? searchInput.value : '';
+      filterConsultationRoster(targetId, currentQuery);
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function () {
+      const activeBtn = document.querySelector('.service-tab-btn.active');
+      const currentCat = activeBtn ? activeBtn.getAttribute('data-target') : 'all';
+      filterConsultationRoster(currentCat, this.value);
+    });
+  }
+
+  // Pre-select service in consultation form when clicking 'View details'
+  const rosterButtons = document.querySelectorAll('.btn-roster-pill');
+  const serviceDropdown = document.getElementById('form-service-select');
+
+  rosterButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const preselectVal = this.getAttribute('data-preselect');
+      if (serviceDropdown && preselectVal) {
+        serviceDropdown.value = preselectVal;
+      }
     });
   });
 

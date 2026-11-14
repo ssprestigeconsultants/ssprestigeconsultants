@@ -18,6 +18,14 @@ get_header(); ?>
         
         <!-- Left Column: Value Proposition & Authority -->
         <div class="hero-content">
+          <!-- Floating 3D Elements from Reference Design -->
+          <div class="hero-3d-elements" aria-hidden="true">
+            <div class="floating-sphere sphere-pearl"></div>
+            <div class="floating-sphere sphere-dot-pink"></div>
+            <div class="floating-sphere sphere-dot-blue"></div>
+            <div class="floating-sphere sphere-dot-coral"></div>
+          </div>
+
           <div class="hero-badge">
             <span class="hero-badge-dot"></span>
             <span>SECP Registered LLP • Inc # 0316515 • NTN # I107949-3</span>
@@ -34,7 +42,7 @@ get_header(); ?>
 
           <div class="hero-cta-group">
             <a href="#services" class="btn-hero-primary">
-              <span>Explore Advisory Services</span>
+              <span>Get Started &amp; Explore</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
             <a href="#consultation" class="btn-hero-secondary">
@@ -69,11 +77,19 @@ get_header(); ?>
               <span>Advisory in Motion • Direct Partner Oversight</span>
             </div>
 
-            <div class="video-container">
+            <div class="video-container circular-cutout">
               <video class="hero-video-element" id="hero-bg-video" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80">
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-financial-analyst-working-on-a-laptop-42994-large.mp4" type="video/mp4">
               </video>
               <div class="video-overlay-gradient"></div>
+
+              <!-- Interactive Floating Toggle Slider from Reference Design -->
+              <div class="hero-floating-toggle" id="heroSliderToggle" role="button" tabindex="0" title="Click to toggle live status">
+                <div class="toggle-slider-track">
+                  <div class="toggle-slider-thumb"></div>
+                </div>
+                <span class="toggle-slider-label">CA-CAF Oversight</span>
+              </div>
 
               <!-- Frosted Glass Controller Bar -->
               <div class="video-controls-bar">
@@ -83,7 +99,7 @@ get_header(); ?>
                 <div class="video-scrubber-track">
                   <div class="video-scrubber-progress" id="video-progress-bar"></div>
                 </div>
-                <span class="video-tagline-text">S&amp;S Prestige Video Tour</span>
+                <span class="video-tagline-text">S&amp;S Prestige Tour</span>
               </div>
             </div>
 
@@ -105,21 +121,163 @@ get_header(); ?>
         <div class="selector-header">
           <div class="selector-heading-group">
             <div class="selector-icon-pin">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <h2 class="selector-title">Select Your Required Consultation Service</h2>
-              <span class="selector-subtitle">Transparent scope, dedicated Chartered Accountant delivery, zero hidden charges</span>
+              <h2 class="selector-title">Doctor Consultation &bull; Financial &amp; Corporate Advisory</h2>
+              <span class="selector-subtitle">Chartered Accountant oversight • Transparent fixed scopes • Direct partner helpline</span>
             </div>
           </div>
+          <div class="selector-header-accent-dot" aria-hidden="true"></div>
+        </div>
 
-          <!-- Category Filter Tabs -->
+        <!-- Filter Tabs & Search Bar Row (Reference Design Match) -->
+        <div class="selector-toolbar-row">
           <div class="service-tabs-nav" role="tablist">
-            <button class="service-tab-btn active" data-target="tab-taxation">Taxation &amp; FBR</button>
-            <button class="service-tab-btn" data-target="tab-secp">SECP Company Setup</button>
-            <button class="service-tab-btn" data-target="tab-accounting">Cloud Bookkeeping</button>
+            <button class="service-tab-btn active" data-target="all">All Practice Areas</button>
+            <button class="service-tab-btn" data-target="tab-taxation">Taxation &amp; FBR</button>
+            <button class="service-tab-btn" data-target="tab-secp">SECP Setup</button>
+            <button class="service-tab-btn" data-target="tab-accounting">Cloud Accounting</button>
             <button class="service-tab-btn" data-target="tab-audit">Audit &amp; Assurance</button>
-            <button class="service-tab-btn" data-target="tab-cfo">Virtual CFO &amp; ERP</button>
+            <button class="service-tab-btn" data-target="tab-cfo">Virtual CFO</button>
+          </div>
+
+          <div class="consultation-search-box">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="consultationSearchInput" placeholder="Search for more..." aria-label="Search practice areas or consultants">
+          </div>
+        </div>
+
+        <!-- Quick Consultation Roster Table (Reference Design Match) -->
+        <div class="consultation-roster-wrapper">
+          <div class="roster-table-scroll">
+            <table class="roster-table" id="consultationRosterTable">
+              <thead>
+                <tr>
+                  <th>Advisor / Practice</th>
+                  <th>Degree / Credential</th>
+                  <th>Chamber &amp; Scope</th>
+                  <th>Availability</th>
+                  <th style="text-align: right;">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-category="tab-taxation" data-keywords="tax taxation fbr sunil babar income irs 114 corporate individual sales ntn">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar">SB</div>
+                      <div>
+                        <strong>Sunil Babar</strong>
+                        <span class="roster-lead-sub">Managing Partner</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-tax">CA-CAF (ICAP)</span></td>
+                  <td>Corporate Tax, FBR IRIS &amp; Audit Defense</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Mon - Sat &bull; Active Today
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="#consultation" class="btn-roster-pill" data-preselect="taxation">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-secp" data-keywords="secp corporate company registration pvt ltd smc llp incorporation legal formation">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar avatar-secp">SC</div>
+                      <div>
+                        <strong>Corporate Secretarial Desk</strong>
+                        <span class="roster-lead-sub">SECP Practice Wing</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-secp">SECP Registered Agent</span></td>
+                  <td>PVT LTD, SMC &amp; Foreign LLP Incorporation</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Fast-Track (3-5 Days)
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="#consultation" class="btn-roster-pill" data-preselect="secp">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-accounting" data-keywords="accounting bookkeeping payroll ledgers quickbooks xero reconciliation balance sheet">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar avatar-acct">CB</div>
+                      <div>
+                        <strong>Cloud Bookkeeping Desk</strong>
+                        <span class="roster-lead-sub">Digital Accounting Team</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-acct">QuickBooks / Xero</span></td>
+                  <td>Monthly Ledgers, Payroll &amp; Invoicing Management</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Instant Client Onboarding
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="#consultation" class="btn-roster-pill" data-preselect="bookkeeping">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-audit" data-keywords="audit assurance statutory controls internal big4 risk compliance review">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar avatar-audit">AA</div>
+                      <div>
+                        <strong>Statutory Audit &amp; Assurance</strong>
+                        <span class="roster-lead-sub">Audit Review Board</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-audit">Big-4 Audit Trained</span></td>
+                  <td>Independent Statutory Audit &amp; Internal Controls</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      FY 2025-26 Slots Open
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="#consultation" class="btn-roster-pill" data-preselect="audit">View details</a>
+                  </td>
+                </tr>
+
+                <tr data-category="tab-cfo" data-keywords="cfo virtual erp sap oracle financial modeling valuation business strategy s4hana">
+                  <td>
+                    <div class="roster-cell-lead">
+                      <div class="roster-lead-avatar avatar-cfo">VC</div>
+                      <div>
+                        <strong>Virtual CFO &amp; ERP Advisory</strong>
+                        <span class="roster-lead-sub">Enterprise Transformation</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="roster-cred-badge badge-cfo">SAP S/4HANA &bull; Oracle</span></td>
+                  <td>Virtual CFO, Financial Modeling &amp; ERP Architecture</td>
+                  <td>
+                    <span class="roster-avail-pill">
+                      <span class="avail-dot-live"></span>
+                      Executive Appointment
+                    </span>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="#consultation" class="btn-roster-pill" data-preselect="cfo">View details</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -625,7 +783,7 @@ get_header(); ?>
 
           <div class="leader-contact-box">
             <div><strong>Direct Contact:</strong> +92-346-4439391 / +92-333-4439391</div>
-            <div><strong>Email:</strong> ssprestigeconsultants@gmail.com</div>
+            <div><strong>Email:</strong> <a href="mailto:info@ssprestigeconsultants.com" style="color: #1E293B; text-decoration: none;">info@ssprestigeconsultants.com</a></div>
             <a href="https://wa.me/923464439391" target="_blank" rel="noopener" class="btn-primary-glow" style="margin-top: 10px; width: 100%;">
               <span>Connect on WhatsApp</span>
             </a>

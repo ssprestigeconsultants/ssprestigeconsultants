@@ -34,7 +34,7 @@ get_header(); ?>
         </p>
         <div style="font-size: 14px; color: #1E293B; display: flex; flex-direction: column; gap: 8px;">
           <div><strong>Direct Phone:</strong> +92 346 4439391 / +92 333 4439391</div>
-          <div><strong>Email:</strong> ssprestigeconsultants@gmail.com</div>
+          <div><strong>Email:</strong> <a href="mailto:info@ssprestigeconsultants.com" style="color: #1E293B; text-decoration: none;">info@ssprestigeconsultants.com</a></div>
           <div><strong>Hours:</strong> Mon - Sat: 9:00 AM – 6:00 PM PKT</div>
         </div>
         <a href="https://wa.me/923464439391" target="_blank" rel="noopener" class="btn-primary-glow" style="margin-top: 20px; width: 100%; justify-content: center;">
@@ -55,7 +55,7 @@ get_header(); ?>
         </p>
         <div style="font-size: 14px; color: #1E293B; display: flex; flex-direction: column; gap: 8px;">
           <div><strong>Direct Phone:</strong> +92 346 4439391 / +92 333 4439391</div>
-          <div><strong>Email:</strong> ssprestigeconsultants@gmail.com</div>
+          <div><strong>Email:</strong> <a href="mailto:info@ssprestigeconsultants.com" style="color: #1E293B; text-decoration: none;">info@ssprestigeconsultants.com</a></div>
           <div><strong>Hours:</strong> Mon - Sat: 9:00 AM – 6:00 PM PKT</div>
         </div>
         <a href="https://wa.me/923464439391" target="_blank" rel="noopener" class="btn-primary-glow" style="margin-top: 20px; width: 100%; justify-content: center; background: linear-gradient(135deg, #059669 0%, #047857 100%);">

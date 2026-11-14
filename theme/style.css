@@ -4,7 +4,7 @@ Theme URI: https://ssprestigeconsultants.com
 Author: SS Prestige Consultants LLP
 Author URI: https://ssprestigeconsultants.com
 Description: High-converting, bespoke corporate theme for S&S PRESTIGE CONSULTANTS LLP.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 Text Domain: ssprestige
 */
@@ -658,7 +658,75 @@ img, video {
 }
 
 .hero-content {
+  position: relative;
   width: 100%;
+}
+
+/* Floating 3D Elements from Reference Design */
+.hero-3d-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 0;
+}
+
+.floating-sphere {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sphere-pearl {
+  width: clamp(34px, 4.5vw, 46px);
+  height: clamp(34px, 4.5vw, 46px);
+  bottom: clamp(10px, 3vw, 30px);
+  right: clamp(10px, 4vw, 40px);
+  background: radial-gradient(circle at 35% 30%, #FFFFFF 0%, #F1F5F9 45%, #CBD5E1 100%);
+  box-shadow: 0 16px 28px -6px rgba(15, 23, 42, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.08), inset 4px 4px 8px rgba(255, 255, 255, 0.95);
+  animation: floatSlow 6s ease-in-out infinite alternate;
+}
+
+.sphere-dot-pink {
+  width: clamp(10px, 1.6vw, 14px);
+  height: clamp(10px, 1.6vw, 14px);
+  top: clamp(10px, 3vw, 20px);
+  right: clamp(20px, 6vw, 80px);
+  background: radial-gradient(circle at 35% 30%, #FFA4B8 0%, #FB7185 100%);
+  box-shadow: 0 6px 14px rgba(251, 113, 133, 0.4);
+  animation: floatMed 5s ease-in-out infinite alternate;
+}
+
+.sphere-dot-blue {
+  width: clamp(8px, 1.4vw, 12px);
+  height: clamp(8px, 1.4vw, 12px);
+  top: 50%;
+  left: -20px;
+  background: radial-gradient(circle at 35% 30%, #93C5FD 0%, #3B82F6 100%);
+  box-shadow: 0 6px 14px rgba(59, 130, 246, 0.4);
+  animation: floatSlow 7s ease-in-out infinite alternate;
+}
+
+.sphere-dot-coral {
+  width: clamp(12px, 1.8vw, 16px);
+  height: clamp(12px, 1.8vw, 16px);
+  bottom: -15px;
+  left: 25%;
+  background: radial-gradient(circle at 35% 30%, #FED7AA 0%, #FB923C 100%);
+  box-shadow: 0 6px 14px rgba(251, 146, 60, 0.35);
+  animation: floatMed 6.5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatMed {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
 
 .hero-badge {
@@ -717,6 +785,8 @@ img, video {
   flex-wrap: wrap;
   gap: 14px;
   margin-bottom: 36px;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-hero-primary {
@@ -724,21 +794,23 @@ img, video {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: clamp(12px, 2vw, 15px) clamp(20px, 3vw, 32px);
-  font-size: clamp(0.88rem, 1.6vw, var(--font-size-base));
+  padding: clamp(12px, 2vw, 16px) clamp(22px, 3.5vw, 36px);
+  font-size: clamp(0.92rem, 1.6vw, var(--font-size-base));
   font-weight: var(--font-weight-bold);
   color: #FFFFFF !important;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0E55DB 100%);
-  border-radius: var(--radius-button);
+  background: linear-gradient(135deg, #1A6BFF 0%, #0052E0 100%);
+  border-radius: var(--radius-pill);
   text-decoration: none;
-  box-shadow: var(--btn-glow-shadow);
+  box-shadow: 0 14px 28px -4px rgba(26, 107, 255, 0.45);
   transition: all var(--transition-fast);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-hero-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--btn-glow-hover);
+  box-shadow: 0 18px 36px -4px rgba(26, 107, 255, 0.55);
 }
 
 .btn-hero-secondary {
@@ -797,7 +869,7 @@ img, video {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
-  border-radius: clamp(18px, 3vw, 28px);
+  border-radius: clamp(24px, 4vw, 36px);
   padding: clamp(10px, 2vw, 16px);
   box-shadow: 0 30px 60px -15px rgba(15, 23, 42, 0.12);
   overflow: hidden;
@@ -808,9 +880,13 @@ img, video {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 11;
-  border-radius: clamp(14px, 2vw, 20px);
+  border-radius: clamp(18px, 3vw, 28px);
   overflow: hidden;
   background-color: #0F172A;
+}
+
+.video-container.circular-cutout {
+  border-radius: clamp(18px, 3.5vw, 32px);
 }
 
 .hero-video-element {
@@ -825,6 +901,71 @@ img, video {
   inset: 0;
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.65) 100%);
   pointer-events: none;
+}
+
+/* Floating Interactive Toggle Slider from Reference Screenshot */
+.hero-floating-toggle {
+  position: absolute;
+  bottom: clamp(52px, 8vw, 68px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.hero-floating-toggle:hover {
+  background: rgba(255, 255, 255, 0.98);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.toggle-slider-track {
+  width: 32px;
+  height: 16px;
+  background: #E2E8F0;
+  border-radius: var(--radius-pill);
+  position: relative;
+  transition: background var(--transition-fast);
+}
+
+.hero-floating-toggle.active .toggle-slider-track {
+  background: var(--color-primary);
+}
+
+.toggle-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-fast);
+}
+
+.hero-floating-toggle.active .toggle-slider-thumb {
+  transform: translateX(16px);
+}
+
+.toggle-slider-label {
+  font-size: 11.5px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  letter-spacing: -0.2px;
+  white-space: nowrap;
 }
 
 /* Frosted Video Controller Bar */
@@ -920,9 +1061,9 @@ img, video {
   backdrop-filter: blur(var(--glass-blur-heavy));
   -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
   border: 1px solid var(--glass-border);
-  border-radius: clamp(16px, 3vw, 24px);
+  border-radius: clamp(20px, 3.5vw, 32px);
   box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
-  padding: clamp(18px, 4vw, 36px);
+  padding: clamp(20px, 4vw, 40px);
   width: 100%;
 }
 
@@ -930,9 +1071,8 @@ img, video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(226, 232, 240, 0.8);
 }
@@ -967,6 +1107,228 @@ img, video {
   font-size: clamp(11.5px, 1.5vw, var(--font-size-xs));
   color: var(--color-muted);
   font-weight: var(--font-weight-medium);
+}
+
+.selector-header-accent-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FDA4AF;
+  box-shadow: 0 0 0 4px rgba(253, 164, 175, 0.3);
+  flex-shrink: 0;
+}
+
+/* Selector Toolbar Row: Tabs + Search Box */
+.selector-toolbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.consultation-search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: all var(--transition-fast);
+  min-width: min(100%, 260px);
+}
+
+.consultation-search-box:focus-within {
+  background: #FFFFFF;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(26, 107, 255, 0.15);
+}
+
+.consultation-search-box svg {
+  color: var(--color-muted);
+  flex-shrink: 0;
+}
+
+.consultation-search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 13.5px;
+  color: var(--color-dark);
+  width: 100%;
+}
+
+.consultation-search-box input::placeholder {
+  color: var(--color-muted);
+}
+
+/* Consultation Quick Roster Table */
+.consultation-roster-wrapper {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+}
+
+.roster-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.roster-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.roster-table thead tr {
+  background: rgba(248, 250, 252, 0.85);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.roster-table th {
+  padding: 14px 18px;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  white-space: nowrap;
+}
+
+.roster-table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.roster-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.roster-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(241, 245, 249, 0.9);
+}
+
+.roster-table td {
+  padding: 16px 18px;
+  vertical-align: middle;
+  color: var(--color-slate);
+}
+
+/* Advisor Cell */
+.roster-cell-lead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.roster-lead-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0A50D0 100%);
+  color: #FFFFFF;
+  font-weight: var(--font-weight-bold);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(26, 107, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.avatar-secp { background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); }
+.avatar-acct { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+.avatar-audit { background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%); }
+.avatar-cfo { background: linear-gradient(135deg, #D97706 0%, #B45309 100%); }
+
+.roster-lead-sub {
+  display: block;
+  font-size: 11.5px;
+  color: var(--color-muted);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Credential Badge */
+.roster-cred-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+}
+
+.badge-tax { background: #EFF6FF; color: var(--color-primary); }
+.badge-secp { background: #E0F2FE; color: #0284C7; }
+.badge-acct { background: #ECFDF5; color: #059669; }
+.badge-audit { background: #F5F3FF; color: #7C3AED; }
+.badge-cfo { background: #FEF3C7; color: #D97706; }
+
+/* Availability Pill */
+.roster-avail-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  white-space: nowrap;
+}
+
+.avail-dot-live {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  flex-shrink: 0;
+}
+
+/* View Details Pill Button (Direct from Reference Screenshot) */
+.btn-roster-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 18px;
+  border-radius: var(--radius-pill);
+  background: #0F172A;
+  color: #FFFFFF !important;
+  font-size: 12.5px;
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  transition: all var(--transition-fast);
+}
+
+.btn-roster-pill:hover {
+  background: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 107, 255, 0.35);
+}
+
+@media (max-width: 768px) {
+  .selector-toolbar-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .consultation-search-box {
+    width: 100%;
+  }
+  .roster-table th, .roster-table td {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
 }
 
 /* Service Category Tabs */

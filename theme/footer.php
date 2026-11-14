@@ -61,7 +61,7 @@
         </p>
         <div style="font-size: 13px; color: #E2E8F0;">
           <strong>Direct Line:</strong> <a href="tel:+923464439391" style="color: #38BDF8; text-decoration: none;">+92 346 4439391</a> / <a href="tel:+923334439391" style="color: #38BDF8; text-decoration: none;">+92 333 4439391</a><br>
-          <strong>Email:</strong> <a href="mailto:ssprestigeconsultants@gmail.com" style="color: #38BDF8; text-decoration: none;">ssprestigeconsultants@gmail.com</a>
+          <strong>Email:</strong> <a href="mailto:info@ssprestigeconsultants.com" style="color: #38BDF8; text-decoration: none;">info@ssprestigeconsultants.com</a>
         </div>
       </div>
 

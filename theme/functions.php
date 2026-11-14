@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SS_PRESTIGE_VERSION', '1.0.0');
+define('SS_PRESTIGE_VERSION', '1.0.2');
 
 function ss_prestige_setup() {
     // Add default posts and comments RSS feed links to head.
@@ -126,7 +126,7 @@ function ss_prestige_handle_consultation() {
     $service = isset($_POST['service_type']) ? sanitize_text_field($_POST['service_type']) : '';
     $message = isset($_POST['client_message']) ? sanitize_textarea_field($_POST['client_message']) : '';
 
-    $to      = 'ssprestigeconsultants@gmail.com';
+    $to      = ['info@ssprestigeconsultants.com', 'ssprestigeconsultants@gmail.com'];
     $subject = 'New Consultation Request - ' . $name . ' (' . ucfirst($service) . ')';
     
     $body  = "A new consultation inquiry has been submitted on ssprestigeconsultants.com:\n\n";
@@ -137,7 +137,10 @@ function ss_prestige_handle_consultation() {
     $body .= "Requirement Details:\n" . $message . "\n\n";
     $body .= "Submission Time: " . current_time('mysql') . "\n";
 
-    $headers = ['Content-Type: text/plain; charset=UTF-8'];
+    $headers = [
+        'Content-Type: text/plain; charset=UTF-8',
+        'From: S&S Prestige Consultants <info@ssprestigeconsultants.com>'
+    ];
     if (!empty($email)) {
         $headers[] = 'Reply-To: ' . $name . ' <' . $email . '>';
     }
