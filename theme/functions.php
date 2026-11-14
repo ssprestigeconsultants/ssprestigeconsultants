@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SS_PRESTIGE_VERSION', '1.0.2');
+define('SS_PRESTIGE_VERSION', '1.0.3');
 
 function ss_prestige_setup() {
     // Add default posts and comments RSS feed links to head.
